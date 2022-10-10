@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>University of Dhaka</title>
+            <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- link -->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scrollFunction.css">
+    <link rel="stylesheet" href="css/home.css">
+            <!-- script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- page preloader -->
+<div id="preloader" class="preloader">
+<img src="img/preloader.gif" alt="preloader">
+</div>
+
+            <!-- go to top -->
+<button onclick="topFunction()" id="topBtn" class="bi bi-arrow-up-square-fill"></button>
+        <script>
+            // scroll top
+                var btn = $('#topBtn');
+                $(window).scroll(function() {
+                if ($(window).scrollTop() > 1000) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+                });
+                btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0});
+                });
+        </script>
+
+            <!-- codes for topBar -->
+<div id="topBar">
+    <div class="container">
+        <ul>
+            <li><a href="login.html"><i class="bi bi-key-fill fs-6"></i> DU LOGIN</a></li>
+            <li><a href="login.html"><i class="bi bi-key-fill fs-6"></i> STUDENTS LOGIN</a></li>
+            <li><a href="login.html"><i class="bi bi-search fs-6"></i> FIND PROGRAM</a></li>
+        </ul>
+    </div>
+</div>
+
+            <!-- codes for header section start from here -->
+<header>
+    <div class="container position-relative">
+                <!-- codes for left menu -->
+        <div class="left_menu">
+            <div class="icon bi bi-justify" onclick="document.querySelector('header .left_menu .icon').classList.toggle('bi-text-center');  document.querySelector('header .left_menu .left_menu_wrapper').classList.toggle('show');"></div>
+                <!-- left menu wrapper -->
+            <div class="left_menu_wrapper">
+                <ul>
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu1').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu1').classList.toggle('bi-x');">ABOUT   <span class="bi bi-plus menu1 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu1">
+                            <li class="bi bi-plus icon1" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links1').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon1').classList.toggle('bi-x');">
+                                <span class="float-end">ABOUT UNIVERSITY</span>
+                                <ul class="links links1">
+                                    <li><a href="historical-outline.html"><i class="bi bi-caret-right-fill"></i> Historical Outlne</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> University at a Glance</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Honoris Causa</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Message from the Vice Chancellor</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> List of Vice Chancellors</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="bi bi-plus icon2" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links2').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon2').classList.toggle('bi-x');">
+                                <span class="float-end">UNIVERSITY LEADERSHIP</span>
+                                <ul class="links links2">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chancellor</a></li>
+                                    <li><a href="vice-chancellor.html"><i class="bi bi-caret-right-fill"></i> Vice Chancellor</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Pro-Vice Chancellor (Administration)</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Pro-Vice Chancellor (Academic)</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Treasurer</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="bi bi-plus icon3" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links3').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon3').classList.toggle('bi-x');">
+                                <span class="float-end">GOVERNANCE FRAMEWORK</span>
+                                <ul class="links links3">
+                                    <li><a href="du-ordinance.html"><i class="bi bi-caret-right-fill"></i> University Ordinance</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Senate Members</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Syndicate Members</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> University Statutes</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu2').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu2').classList.toggle('bi-x');">ACADEMICS   <span class="bi bi-plus menu2 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu2">
+                            <li class="bi bi-plus icon4" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links4').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon4').classList.toggle('bi-x');">
+                                <span class="float-end">ACADEMIC</span>
+                                <ul class="links links4">
+                                    <li><a href="du-programs.html"><i class="bi bi-caret-right-fill"></i> Academic Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Academic Calendar</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Libraries</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="bi bi-plus icon5" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links5').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon5').classList.toggle('bi-x');">
+                                <span class="float-end">ACADEMIC BODIES</span>
+                                <ul class="links links5">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculties</a></li>
+                                    <li><a href="departments.html"><i class="bi bi-caret-right-fill"></i> Departments</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Institutes</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Constituent Colleges</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="bi bi-plus icon6" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links6').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon6').classList.toggle('bi-x');">
+                                <span class="float-end">ADMISSION</span>
+                                <ul class="links links6">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Graduate Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> MPhil Programs</a></li>
+                                    <li><a href="phd-programs.html"><i class="bi bi-caret-right-fill"></i> PhD Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> International Students</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu3').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu3').classList.toggle('bi-x');">ADMINISTRATION   <span class="bi bi-plus menu3 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu3">
+                            <li class="bi bi-plus icon7" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links7').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon7').classList.toggle('bi-x');">
+                                <span class="float-end">ACADEMIC HEADS</span>
+                                <ul class="links links7">
+                                    <li><a href="deans.html"><i class="bi bi-caret-right-fill"></i> Deans of Faculties</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chairman of Departments</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Directors of Institutes</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="bi bi-plus icon8" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links8').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon8').classList.toggle('bi-x');">
+                                <span class="float-end">HEAD OF ADMINISTRATIVE OFFICES</span>
+                                <ul class="links links8">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Directors of Research Centers & Bureau</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Provosts & Wardens of Halls and Hostel</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Head of Offices</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="bi bi-plus icon9" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links9').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon9').classList.toggle('bi-x');">
+                                <span class="float-end">OTHERS</span>
+                                <ul class="links links9">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> All Offices</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculty Member Profile</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Officer Profile</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu4').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu4').classList.toggle('bi-x');">STUDENTS   <span class="bi bi-plus menu4 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu4">
+                            <li class="bi bi-plus icon10" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links10').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon10').classList.toggle('bi-x');">
+                                <span class="float-end">STUDENT FACILITIES</span>
+                                <ul class="links links10">
+                                    <li><a href="sch-aids.html"><i class="bi bi-caret-right-fill"></i> Scholarships & Financial Aids</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Halls of Residence</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Transport Facilities</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Health Insurance</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="bi bi-plus icon11" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links11').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon11').classList.toggle('bi-x');">
+                                <span class="float-end">ONLINE SERVICES</span>
+                                <ul class="links links11">
+                                    <li><a href="apply.html"><i class="bi bi-caret-right-fill"></i> Apply for Certificate / Marksheet</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Apply for Govt. Scholarships</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Examination for Transcript</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Apply for Transcript</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Exam Form Fill-up</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="bi bi-plus icon12" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links12').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon12').classList.toggle('bi-x');">
+                                <span class="float-end">ALUMNI</span>
+                                <ul class="links links12">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Alumni Association</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu5').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu5').classList.toggle('bi-x');">RESEARCH   <span class="bi bi-plus menu5 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu5">
+                            <li><a href="research.html"><i class="bi bi-caret-right-fill"></i> Research Centers & Bureaus</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Research & Publications</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Research Collaboration</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Funded Projects</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> University Journals</a></li>
+                        </ul>
+                    </li>
+
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu6').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu6').classList.toggle('bi-x');">LINKS   <span class="bi bi-plus menu6 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu6">
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Admission</a></li>
+                            <li><a href="login.html"><i class="bi bi-caret-right-fill"></i> DU Login</a></li>
+                            <li><a href="login.html"><i class="bi bi-caret-right-fill"></i> Student Login</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Telephone and Email Index</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Forms</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Approved NOCs</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> E-Tender</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Jobs</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Trust Funds</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Notice</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Latest News</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Events</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Tender</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Barta</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Media</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> APA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+                <!-- logo -->
+        <a href="index.html" class="logo"><img src="img/DU-Logo-Light.png" alt="Logo" width="100%"></a>
+
+                <!-- codes for main menu -->
+        <div class="menu">
+            <ul>
+                <li>ABOUT <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>ABOUT UNIVERSITY</h6>
+                                <ul>
+                                    <li><a href="historical-outline.html"><i class="bi bi-caret-right-fill"></i> Historical Outlne</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> University at a Glance</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Honoris Causa</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Message from the Vice Chancellor</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> List of Vice Chancellors</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>UNIVERSITY LEADERSHIP</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chancellor</a></li>
+                                    <li><a href="vice-chancellor.html"><i class="bi bi-caret-right-fill"></i> Vice Chancellor</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Pro-Vice Chancellor (Administration)</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Pro-Vice Chancellor (Academic)</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Treasurer</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>GOVERNANCE FRAMEWORK</h6>
+                                <ul>
+                                    <li><a href="du-ordinance.html"><i class="bi bi-caret-right-fill"></i> University Ordinance</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Senate Members</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Syndicate Members</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> University Statutes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>ACADEMICS <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>ACADEMIC</h6>
+                                <ul>
+                                    <li><a href="du-programs.html"><i class="bi bi-caret-right-fill"></i> Academic Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Academic Calendar</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Libraries</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>ACADEMIC BODIES</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculties</a></li>
+                                    <li><a href="departments.html"><i class="bi bi-caret-right-fill"></i> Departments</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Institutes</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Constituent Colleges</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>ADMISSION</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Graduate Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> MPhil Programs</a></li>
+                                    <li><a href="phd-programs.html"><i class="bi bi-caret-right-fill"></i> PhD Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> International Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>ADMINISTRATION <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>ACADEMIC HEADS</h6>
+                                <ul>
+                                    <li><a href="deans.html"><i class="bi bi-caret-right-fill"></i> Deans of Faculties</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chairman of Departments</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Directors of Institutes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>HEAD OF ADMINISTRATIVE OFFICES</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Directors of Research Centers & Bureau</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Provosts & Wardens of Halls and Hostel</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Head of Offices</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>OTHERS</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> All Offices</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculty Member Profile</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Officer Profile</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>STUDENTS <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>STUDENT FACILITIES</h6>
+                                <ul>
+                                    <li><a href="sch-aids.html"><i class="bi bi-caret-right-fill"></i> Scholarships & Financial Aids</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Halls of Residence</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Transport Facilities</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Health Insurance</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>ONLINE SERVICES</h6>
+                                <ul>
+                                    <li><a href="apply.html"><i class="bi bi-caret-right-fill"></i> Apply for Certificate / Marksheet</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Apply for Govt. Scholarships</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Examination for Transcript</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Apply for Transcript</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Exam Form Fill-up</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>ALUMNI</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Alumni Association</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">RESEARCH <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown submenu">
+                        <ul>
+                            <li><a href="research.html"><i class="bi bi-caret-right-fill"></i> Research Centers & Bureaus</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Research & Publications</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Research Collaboration</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Funded Projects</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> University Journals</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="position-relative">LINKS <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown submenu">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Admission</a></li>
+                            <li><a href="login.html"><i class="bi bi-caret-right-fill"></i> DU Login</a></li>
+                            <li><a href="login.html"><i class="bi bi-caret-right-fill"></i> Student Login</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Telephone and Email Index</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Forms</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Approved NOCs</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> E-Tender</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Jobs</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Trust Funds</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Notice</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Latest News</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Events</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Tender</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Barta</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Media</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> APA</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- header search box -->
+        <div class="header_search_wrapper">
+            <div class="icon" onclick="document.querySelector('header .header_search_wrapper form').classList.toggle('show')"><i class="bi bi-search"></i></div>
+            <form action="">
+                <div class="input"><input type="radio" name="what_search" id="web" checked> <label for="web">Web</label></div>
+                <div class="input"><input type="radio" name="what_search" id="people"> <label for="people">People</label></div>
+                <div class="input"><input type="search" name="header_search" id="header_search" placeholder="Search"></div>
+            </form>
+        </div>
+    </div>
+
+                    <script>
+                        window.onscroll = function() {headerSticky()};
+                        
+                        function headerSticky() {
+                        if (document.documentElement.scrollTop > 50) {
+                            document.querySelector("header").className = "sticky_header";
+                            document.querySelector ("header a.logo img").src="img/du-logo.png";
+                            } else {
+                                document.querySelector("header").className = "";
+                                document.querySelector ("header a.logo img").src="img/DU-Logo-Light.png";
+                            }
+                        }
+                    </script>
+</header>
+            <!-- codes for header section end here -->
+
+            <!-- codes for slider section start from here -->
+<div id="topSlider">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <!-- main carousel -->
+        <div class="carousel-inner text-white">
+            <div class="carousel-item active">
+                <img src="img/DU_Curzon_Hall.jpg" class="d-block w-100" alt="Curzon Hall">
+                <span class="overlay">
+                    <div class="container">
+                        <div class="row texts">
+                            <div class="col-md-6 p-5">
+                                <h4 class="scroll-element js-scroll scrolled fade-in-bottom">Welcome to the University of Dhaka</h4>
+                                <p class="scroll-element js-scroll scrolled fade-in-right">On the first day of July 1921 the University of Dhaka opened its doors to students with Sir P. J. Hartog ...</p>
+                                <div class="scroll-element js-scroll scrolled fade-in-top"><a href="#" >Read More</a></div>
+                            </div>
+                            <div class="col-md-6 p-5">
+                                <h4 class="scroll-element js-scroll scrolled fade-in-bottom"><i class="bi bi-bank me-3"></i> Founded : 1921</h4>
+                                <h4 class="scroll-element js-scroll scrolled fade-in-top"><i class="bi bi-person-check-fill me-3"></i> Faculty Members : 2000+</h4>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/DU_Students.jpg" class="d-block w-100" alt="DU Students">
+                <span class="overlay">
+                    <div class="container">
+                        <div class="row texts">
+                            <div class="col-md-6 p-5">
+                                <h4 class="scroll-element js-scroll scrolled fade-in-bottom">DU Students' Celebrating their Graduation Moment</h4>
+                                <p class="scroll-element js-scroll scrolled fade-in-right">The main purpose of the University was to create new areas of knowledge and disseminate such knowledge nationally as well</p>
+                                <div class="scroll-element js-scroll scrolled fade-in-top"><a href="#" >Read More</a></div>
+                            </div>
+                            <div class="col-md-6 p-5">
+                                <h4 class="scroll-element js-scroll scrolled fade-in-bottom"><i class="bi bi-people-fill me-3"></i> Regular Students : 37000+</h4>
+                                <h4 class="scroll-element js-scroll scrolled fade-in-top"><i class="bi bi-people-fill me-3"></i> Affiliate College Students : 1,70,100+</h4>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/DU_Award_PM.jpg" class="d-block w-100" alt="Award form PM">
+                <span class="overlay">
+                    <div class="container">
+                        <div class="row texts">
+                            <div class="col-md-6 p-5">
+                                <h4 class="scroll-element js-scroll scrolled fade-in-bottom">The Glorious Journey</h4>
+                                <p class="scroll-element js-scroll scrolled fade-in-right">On the first day of July 1921, the University of Dhaka opened its doors to students with Sir P. J. Hartog ...</p>
+                                <div class="scroll-element js-scroll scrolled fade-in-top"><a href="#" >Read More</a></div>
+                            </div>
+                            <div class="col-md-6 p-5">
+                                <h4 class="scroll-element js-scroll scrolled fade-in-bottom"><i class="bi bi-bank me-3"></i>  Departments : 83</h4>
+                                <h4 class="scroll-element js-scroll scrolled fade-in-left"><i class="bi bi-bank me-3"></i>  Institutes: 13</h4>
+                                <h4 class="scroll-element js-scroll scrolled fade-in-top"><i class="bi bi-bank me-3"></i>  Research Centers: 54</h4>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+                <!-- slider buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+            <!-- codes for slider section end here -->
+
+            <!-- codes for leadership section start from here -->
+<section id="leadership">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 mx-auto p-2">
+                <div class="item text-center scroll-element js-scroll scrolled fade-in-left">
+                    <a href="#">
+                        <img src="img/vc-profile.jpg" alt="Vice Chancellor">
+                        <h6 style="color: #333; margin-top: 20px;">Professor Dr. Md. Akhtaruzzaman</h6>
+                        <p>Vice Chancellor</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-8 p-2">
+                <div class="item message scroll-element js-scroll scrolled fade-in-top">
+                    <h4 style="color: navy;">Message from the Vice Chancellor</h4>
+                    <p>Welcome to the University of Dhaka's website, featuring the oldest, largest and the premier multidisciplinary university of Bangladesh!  Founded in 1921, The University of Dhaka has always had the mission of uplifting the educational standards of the people of the region. It was initially meant to provide tertiary education to people who didn't have access to higher studies till then. Subsequently, it has contributed significantly to the socio-cultural and political development of what was once East Bengal and then East Pakistan, and is now Bangladesh. Since its establishment, the university has been fulfilling the hopes and aspirations ...</p>
+                    <a href="vice-chancellor.html#message">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+                <div class="item text-center scroll-element js-scroll scrolled slide-in-left">
+                    <a href="#">
+                        <img src="img/pvc-ad-profile.jpg" alt="Pro Vice Chancellor">
+                        <h6 style="color: #333; margin-top: 20px;">Professor Dr. Muhammad Samad</h6>
+                        <p>Pro-Vice Chancellor (Administration)</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+                <div class="item text-center scroll-element js-scroll scrolled zoom-in">
+                    <a href="#">
+                        <img src="img/pvc-ac-profile.jpg" alt="Pro Vice Chancellor">
+                        <h6 style="color: #333; margin-top: 20px;">Professor Dr. A. S. M. Maksud Kamal</h6>
+                        <p>Pro-Vice Chancellor (Academic)</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mx-auto p-2">
+                <div class="item text-center scroll-element js-scroll scrolled slide-in-right">
+                    <a href="#">
+                        <img src="img/treasurer-profile.jpg" alt="Treasurer">
+                        <h6 style="color: #333; margin-top: 20px;">Professor Mamtaz Uddin Ahmed</h6>
+                        <p>Treasurer</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- codes for leadership section end here -->
+
+            <!-- codes for numbers section start from here -->
+<section id="numbers">
+    <div class="secTitle scroll-element js-scroll scrolled zoom-in"><h3>University of Dhaka in Numbers</h3></div>
+    <div class="banner">
+        <div class="container">
+            <div id="counter" class="row">
+                <div class="col-lg-3 col-md-6 scroll-element js-scroll scrolled fade-in-top">
+                    <div class="icon"><i class="bi bi-bank2"></i></div>
+                    <h2 class="counter-value" data-count="1921">0</h2>
+                    <h6>Founded</h6>
+                </div>
+                <div class="col-lg-3 col-md-6 scroll-element js-scroll scrolled fade-in-top">
+                    <div class="icon"><i class="bi bi-person-check-fill"></i></div>
+                    <h2><span class="counter-value" data-count="2000">0 </span> +</h2>
+                    <h6>Faculty Members</h6>
+                </div>
+                <div class="col-lg-3 col-md-6 scroll-element js-scroll scrolled fade-in-top">
+                    <div class="icon"><i class="bi bi-people-fill"></i></div>
+                    <h2><span class="counter-value" data-count="37000">0 </span> +</h2>
+                    <h6>Regular Students</h6>
+                </div>
+                <div class="col-lg-3 col-md-6 scroll-element js-scroll scrolled fade-in-top">
+                    <div class="icon"><i class="bi bi-building"></i></div>
+                    <h2 class="counter-value" data-count="134">0</h2>
+                    <h6>Constituent & Affiliated Colleges</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+                <script>
+                    // counting on scroll
+                    var a = 0;
+                    $(window).scroll(function() {
+                    var oTop = $('#counter').offset().top - window.innerHeight;
+                    if (a == 0 && $(window).scrollTop() > oTop) {
+                        $('.counter-value').each(function() {
+                        var $this = $(this),
+                            countTo = $this.attr('data-count');
+                        $({
+                            countNum: $this.text()
+                        }).animate({
+                            countNum: countTo
+                            },
+                            {
+                            duration: 3000,
+                            easing: 'swing',
+                            step: function() {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function() {
+                                $this.text(this.countNum);
+                            }
+                            });
+                        });
+                        a = 1;
+                    }
+                    });
+                </script>
+</section>
+            <!-- codes for numbers section end here -->
+
+            <!-- codes for welcome section start from here -->
+<section id="welcome">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-3 scroll-element js-scroll scrolled fade-in-left">
+                <h4 style="color: #677B91; margin-bottom: 20px;">Welcome to University of Dhaka</h4>
+                <p>On the first day of July 1921 the University of Dhaka opened its doors to students with Sir P.J. Hartog as the first Vice-Chancellor of the University. The University was set up in a picturesque part of the city known as Ramna on 600 acres of land.The University started its activities with 3 Faculties,12 Departments, 60 teachers, 877 students and 3 dormitories (Halls of Residence) for the students. At present the University consists of 13 Faculties, 83 Departments, 12 Institutes, 20 residential halls, 3 hostels and more than 56 Research Centres. The number of students and teachers has risen to about 37018 and 1992 respectively.The main purpose of the University was to create new areas of knowledge and disseminate this knowledge to the society through its students. Since its inception the University has a distinct character of having distinguished scholars as faculties who have enriched the global pool of knowledge by making notable contributions in the fields of teaching and research.</p>
+                <a href="#">Read More <span class="float-end bi bi-check-circle-fill"></span></a>
+            </div>
+            <div class="col-lg-6 p-3">
+                <div class="yt-video scroll-element js-scroll scrolled fade-in-right">
+                    <button class="yt-icon" onclick="document.querySelector('#welcome .video-wrapper').style.display='inherit'"><i class="bi bi-youtube"></i></button>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video">
+                        <button class="close bi bi-x-circle" onclick="document.querySelector('#welcome .video-wrapper').style.display='none'"></button>
+                        <iframe class="mfp-iframe" src="//www.youtube.com/embed/3gYMR7ppHbw?autoplay=1" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- codes for welcome section end here -->
+
+            <!-- codes for news section start from here -->
+<section id="news">
+    <div class="secTitle scroll-element js-scroll scrolled zoom-in"><h3>Latest News</h3></div>
+    <div class="container">
+        <div id="newsSlider" height="400px">
+            <div class="slide_item">
+                <img src="img/news-1.jpg" width="100%">
+                <div class="date"><i class="bi bi-calendar3 me-3"></i> 29 Sep, 2022</div>
+                <div class="text">
+                    <a href="#"><h5>ঢাবি’র কবি সুফিয়া কামাল হলে ৩ শিক্ষার্থীর স্বর্ণপদক ও ৯৬ শিক্ষার্থীর বৃত্তি লাভ</h5></a>
+                    <div class="btnWrapper"><a href="#" class="rmBtn">+ Read More</a></div>
+                </div>
+            </div>
+            <div class="slide_item">
+                <img src="img/news-2.jpg" width="100%">
+                <div class="date"><i class="bi bi-calendar3 me-3"></i> 27 Sep, 2022</div>
+                <div class="text">
+                    <a href="#"><h5>ঢাবি-এ বিশ্ব পর্যটন দিবস উদযাপন</h5></a>
+                    <div class="btnWrapper"><a href="#" class="rmBtn">+ Read More</a></div>
+                </div>
+            </div>
+            <div class="slide_item">
+                <img src="img/news-3.jpg" width="100%">
+                <div class="date"><i class="bi bi-calendar3 me-3"></i> 27 Sep, 2022</div>
+                <div class="text">
+                    <a href="#"><h5>ঢাকা বিশ্ববিদ্যালয় মনোবিজ্ঞান বিভাগের নবীনবরণ ও বিদায় সংবর্ধনা অনুষ্ঠিত</h5></a>
+                    <div class="btnWrapper"><a href="#" class="rmBtn">+ Read More</a></div>
+                </div>
+            </div>
+            <div class="slide_item">
+                <img src="img/news-4.jpg" width="100%">
+                <div class="date"><i class="bi bi-calendar3 me-3"></i> 27 Sep, 2022</div>
+                <div class="text">
+                    <a href="#"><h5>ঢাবি-এ সপ্তাহব্যাপি শিল্পকর্ম প্রদর্শনী শুরু</h5></a>
+                    <div class="btnWrapper"><a href="#" class="rmBtn">+ Read More</a></div>
+                </div>
+            </div>
+            <div class="slide_item">
+                <img src="img/news-5.jpg" width="100%">
+                <div class="date"><i class="bi bi-calendar3 me-3"></i> 29 Sep, 2022</div>
+                <div class="text">
+                    <a href="#"><h5>ঢাবি-এ ক্ষুদে গবেষক সম্মেলন অনুষ্ঠিত</h5></a>
+                    <div class="btnWrapper"><a href="#" class="rmBtn">+ Read More</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><a href="#" class="btn btn-warning px-4 my-4">View All News</a></div>
+    </div>
+            <script>
+                // product slide
+                HTMLElement.prototype.InitnewsSlider = function (options = null) {
+                var sliderIndex = 2;
+                this.style.height = "250px";
+                var model = [
+                    { zIndex: 0, left: "30%" },
+                    { zIndex: 1, left: "40%" },
+                    { zIndex: 2, left: "50%" },
+                    { zIndex: 1, left: "60%" },
+                    { zIndex: 0, left: "70%" }
+                ];
+                const setPosition = (tempModel, slide_item, index) => {
+                    slide_item.style.zIndex = tempModel[index].zIndex;
+                    slide_item.style.transform = `translateX(-50%) scale(${
+                    0.6 + tempModel[index].zIndex * 0.2
+                    })`;
+                    slide_item.style.left = tempModel[index].left;
+                    tempModel[index].zIndex != 2
+                    ? (slide_item.style.filter = options?.filter ?? "blur(1px)")
+                    : (slide_item.style.filter = null);
+                };
+                const gotoNext = () => {
+                    if (++sliderIndex == 5) sliderIndex = 0;
+                    this.children[sliderIndex].click();
+                };
+                const gotoBack = () => {
+                    if (--sliderIndex == -1) sliderIndex = 4;
+                    this.children[sliderIndex].click();
+                };
+
+                var count = this.childElementCount;
+                for (let index = 0; index < count; index++) {
+                    var image = this.children[index];
+                    setPosition(model, image, index);
+                    image.onclick = function () {
+                    sliderIndex = index;
+                    const arrNew = [...model];
+                    var shifts = index + 3;
+                    if (shifts > 4) shifts -= 5;
+
+                    for (let i = 0; i < shifts; i++) arrNew.unshift(arrNew.pop());
+
+                    for (let findex = 0; findex < count; findex++)
+                        setPosition(arrNew, this.parentNode.children[findex], findex);
+                    };
+                }
+                setInterval(() => {
+                    if (options?.timerEnable ?? true)
+                    options?.slider?.toLowerCase()?.trim() == "gotoback"
+                        ? gotoBack()
+                        : gotoNext();
+                }, options?.timerInterval ?? 5000);
+                };
+
+                document.getElementById("newsSlider").InitnewsSlider({
+                timerInterval: 3000,
+                timerEnable: true,
+                filter: "grayscale(1)",
+                slider: "gotoBack"
+                });
+            </script>
+</section>
+            <!-- codes for news section end here -->
+
+            <!-- codes for dual box section start from here -->
+<section id="dual_box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 p-2">
+                <div class="secTitle scroll-element js-scroll scrolled zoom-in"><h3>Recent and Upcoming Events</h3></div>
+                <div class="row">
+                    <div class="col-md-6 p-3">
+                        <div class="card scroll-element js-scroll scrolled fade-in-bottom">
+                            <img src="img/event-1.png" alt="Event Pic" width="100%">
+                            <ul>
+                                <li><h2 style="color: #ffb606;">29</h2>  <span class="text-muted">SEP, 2022</span></li>
+                                <li><h5><a href="#">Silver Jubilee Celebration, Department of Fisheries</a></h5></li>
+                            </ul>
+                            <div class="btn-wrapper"><a href="#" class="rmBtn">+ Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-3">
+                        <div class="card scroll-element js-scroll scrolled fade-in-top">
+                            <img src="img/event-2.jpg" alt="Event Pic" width="100%">
+                            <ul>
+                                <li><h2 style="color: #ffb606;">19</h2>  <span class="text-muted">SEP, 2022</span></li>
+                                <li><h5><a href="#">Workshop for DU Teachers held</a></h5></li>
+                            </ul>
+                            <div class="btn-wrapper"><a href="#" class="rmBtn">+ Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><a href="#" class="btn btn-warning px-4 my-4">View All Events</a></div>
+            </div>
+            <div class="col-lg-4 p-2">
+                <div class="secTitle scroll-element js-scroll scrolled zoom-in"><h3>Notices</h3></div>
+                <div class="notice_wrapper scroll-element js-scroll scrolled zoom-in">
+                    <div class="notice_board">
+                        <div class="notice">
+                            <a href="#">Announcement of Commonwealth Scholarships tenable in the UK-2023</a> <br>
+                            <span class="text-muted">Published : 29 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">কাজী আবদুল ফাত্তাহ ও খুরশীদা বানু ফাত্তাহ স্বর্ণপদক, ২০১৯</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">মির্জা মোহাম্মদ আবদুল্লাহ ও বেগম বদরুননেসা স্মৃতি স্বর্ণপদক, ২০১৯</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">Rashida Muhiuddin Memorial Gold Medal, 2018, 2019, 2020</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">Barrister Nora Shariff Gold Medal-2018, 2019, 2020</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">মোঃ আমিনুল হক-আতিয়া হক মেমোরিয়াল স্বর্ণপদক, ২০১৯</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">আম্বিয়া খাতুন মজুমদার স্মারক স্বর্ণপদক, ২০১৮</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">ড. হেলাল উদ্দিন খান শামসুল আরেফিন স্মৃতি স্বর্ণপদক, ২০১৯</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">আইআইটি একাডেমিক এক্সিলেন্স গোল্ড মেডেল এওয়ার্ড, ২০১৯</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                        <hr>
+                        <div class="notice">
+                            <a href="#">আখতার ইমাম বৃত্তি তহবিলের স্বর্ণপদক, ২০১৬</a> <br>
+                            <span class="text-muted">Published : 25 Sep, 2022</span> <br>
+                            <a href="#" class="rmBtn">+ Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><a href="#" class="btn btn-warning px-4 my-4">View All Notices</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- codes for dual box section end here -->
+
+            <!-- codes for activities section start from here -->
+<section id="activities">
+    <div class="secTitle scroll-element js-scroll scrolled zoom-in"><h3>Research Activities</h3></div>
+    <div class="container position-relative">
+        <div class="activities_slider">
+            <div class="item">
+                <div class="image"><img src="img/activities-1.jpg" alt="activities" width="100%"></div>
+                <div class="text">
+                    <div class="date">08 Nov, 2021</div>    <br>
+                    <div class="mt-3"><a href="#">Genetic diversity with respect to salt tolerance identified by genome wide study of 176  Bangladeshi traditional rice accessions and published in prestigious journal, PLoS One</a></div>
+                    <div class="rmBtn">
+                        <hr>
+                        <a href="#" class="Btn">+ Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="img/activities-2.jpg" alt="activities" width="100%"></div>
+                <div class="text">
+                    <div class="date">08 Nov, 2021</div>    <br>
+                    <div class="mt-3"><a href="#">Genetic diversity with respect to salt tolerance identified by genome wide study of 176  Bangladeshi traditional rice accessions and published in prestigious journal, PLoS One</a></div>
+                    <div class="rmBtn">
+                        <hr>
+                        <a href="#" class="Btn">+ Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="img/activities-3.jpg" alt="activities" width="100%"></div>
+                <div class="text">
+                    <div class="date">08 Nov, 2021</div>    <br>
+                    <div class="mt-3"><a href="#">Genetic diversity with respect to salt tolerance identified by genome wide study of 176  Bangladeshi traditional rice accessions and published in prestigious journal, PLoS One</a></div>
+                    <div class="rmBtn">
+                        <hr>
+                        <a href="#" class="Btn">+ Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="img/activities-4.jpg" alt="activities" width="100%"></div>
+                <div class="text">
+                    <div class="date">08 Nov, 2021</div>    <br>
+                    <div class="mt-3"><a href="#">Genetic diversity with respect to salt tolerance identified by genome wide study of 176  Bangladeshi traditional rice accessions and published in prestigious journal, PLoS One</a></div>
+                    <div class="rmBtn">
+                        <hr>
+                        <a href="#" class="Btn">+ Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="img/activities-5.png" alt="activities" width="100%"></div>
+                <div class="text">
+                    <div class="date">08 Nov, 2021</div>    <br>
+                    <div class="mt-3"><a href="#">Genetic diversity with respect to salt tolerance identified by genome wide study of 176  Bangladeshi traditional rice accessions and published in prestigious journal, PLoS One</a></div>
+                    <div class="rmBtn">
+                        <hr>
+                        <a href="#" class="Btn">+ Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="img/activities-6.jpg" alt="activities" width="100%"></div>
+                <div class="text">
+                    <div class="date">08 Nov, 2021</div>    <br>
+                    <div class="mt-3"><a href="#">Genetic diversity with respect to salt tolerance identified by genome wide study of 176  Bangladeshi traditional rice accessions and published in prestigious journal, PLoS One</a></div>
+                    <div class="rmBtn">
+                        <hr>
+                        <a href="#" class="Btn">+ Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="img/activities-7.jpg" alt="activities" width="100%"></div>
+                <div class="text">
+                    <div class="date">08 Nov, 2021</div>    <br>
+                    <div class="mt-3"><a href="#">Genetic diversity with respect to salt tolerance identified by genome wide study of 176  Bangladeshi traditional rice accessions and published in prestigious journal, PLoS One</a></div>
+                    <div class="rmBtn">
+                        <hr>
+                        <a href="#" class="Btn">+ Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="img/activities-8.png" alt="activities" width="100%"></div>
+                <div class="text">
+                    <div class="date">08 Nov, 2021</div>    <br>
+                    <div class="mt-3"><a href="#">Genetic diversity with respect to salt tolerance identified by genome wide study of 176  Bangladeshi traditional rice accessions and published in prestigious journal, PLoS One</a></div>
+                    <div class="rmBtn">
+                        <hr>
+                        <a href="#" class="Btn">+ Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center"><a href="#" class="btn btn-warning px-4 my-4">View All Research Activities</a></div>
+</section>
+            <!-- codes for activities section end here -->
+
+            <!-- codes for achievements section start from here -->
+<section id="achievements">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 p-2">
+                <div class="card p-3 mb-4">
+                    <h5>FEATURED- <b>NEWS & EVENTS</b> <a href="#" class="float-end">View All &raquo;</a></h5>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box scroll-element js-scroll scrolled fade-in-top">
+                            <img src="img/PRESScopy.jpg" alt="Press" width="100%">
+                            <div class="m-3"><a href="#">ঢাবি’র শতবর্ষপূর্তিতে ভার্চুয়াল সভা অনুষ্ঠিত। ঢাকা বিশ্ববিদ্যালয় সর্বক্ষেত্রে নেতৃত্ব তৈরিতে গুরুত্বপূর্ণ ভূমিকা পালন করে আসছে-- উপাচার্য</a></div>
+                            <div class="rmBtn">
+                                <hr>
+                                <a href="#" class="Btn">Read More <i class="bi bi-check-circle-fill float-end"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box box2 scroll-element js-scroll scrolled fade-in-top">
+                            <img src="img/live-PM.jpg" alt="Live" width="100%">
+                            <div class="m-3"><a href="#">ঢাবি’র শতবর্ষ পূর্তি উপলক্ষে আন্তর্জাতিক সম্মেলন উদ্বোধন যুগোপযোগী গবেষণা ও দক্ষ মানব সম্পদ তৈরিতে ঢাকা বিশ্ববিদ্যালয়কে অগ্রণী ভূমিকা পালন করতে হবে-- প্রধানমন্ত্রী</a></div>
+                            <div class="rmBtn">
+                                <hr>
+                                <a href="#" class="Btn">Read More <i class="bi bi-check-circle-fill float-end"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-2">
+                <div class="item scroll-element js-scroll scrolled zoom-in">
+                    <h5>STUDENT ACHIEVEMENTS</h5>
+                    <hr>
+                    <div class="p-3">
+                        <ul class="scroll-element js-scroll scrolled fade-in-left">
+                            <li><img src="img/s-a-1.jpg" alt="Google"></li>
+                            <li>
+                                <a href="#"><b>Job position at Google</b></a>  <br>
+                                <span>2022</span> <br>
+                                <a href="#"><i class="bi bi-book"></i> View Details</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="scroll-element js-scroll scrolled fade-in-right">
+                            <li><img src="img/s-a-2.jpg" alt="Facebook"></li>
+                            <li>
+                                <a href="#"><b>P2P Facebook Global Digital Challenge</b></a>  <br>
+                                <span>2021</span> <br>
+                                <a href="#"><i class="bi bi-book"></i> View Details</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="scroll-element js-scroll scrolled fade-in-left">
+                            <li><img src="img/s-a-3.jpg" alt="Award"></li>
+                            <li>
+                                <a href="#"><b>Prime Minister Gold Medal Award</b></a>  <br>
+                                <span>2020</span> <br>
+                                <a href="#"><i class="bi bi-book"></i> View Details</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <a href="#" class="border px-4 py-2 float-end mb-2">View All &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- codes for achievements section end here -->
+
+            <!-- codes for videos section start from here -->
+<section id="videos">
+    <div class="secTitle scroll-element js-scroll scrolled zoom-in"><h3>Our Stories</h3></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 p-2">
+               <div class="item">
+                    <iframe width="100%" src="https://www.youtube.com/embed/wJn0rkn0jZE" frameborder="0" allowfullscreen=""></iframe>
+                    <div class="title">Ferdousi Rahman and Syed Abdul Hadi Awarded Firoza Begum Memorial Gold Medal</div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+                <div class="item">
+                    <iframe width="100%" src="https://www.youtube.com/embed/Q0Il1Pr7oDs" frameborder="0" allowfullscreen="" ></iframe>
+                    <div class="title">Dhaka University Black Day | ঢাকা বিশ্ববিদ্যালয় কালো দিবস</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2 mx-auto">
+                <div class="item">
+                    <iframe width="100%" src="https://www.youtube.com/embed/TrKaYOEzlTc" frameborder="0" allowfullscreen="" ></iframe>
+                    <div class="title">Braille to Bangla Text Converter Software | Developed by Dhaka University</div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><a href="#" class="btn btn-warning px-4 mt-4">View All</a></div>
+    </div>
+</section>
+            <!-- codes for videos section end here -->
+
+            <!-- codes for footer section start from here -->
+<footer>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 p-2">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><a href="#">&gt; Approved NOCs</a></li>
+                <li><a href="#">&gt; Jobs</a></li>
+                <li><a href="#">&gt; E-Tender</a></li>
+                <li><a href="#">&gt; DU Tender</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 p-2 pt-5">
+            <ul>
+                <li><a href="#">&gt; DU Forms</a></li>
+                <li><a href="#">&gt; DU Institutional Repository</a></li>
+                <li><a href="#">&gt; DU Barta</a></li>
+                <li><a href="#">&gt; DU Library</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 p-2 pt-5">
+            <ul>
+                <li><a href="#">&gt; Result Archive</a></li>
+                <li><a href="#">&gt; DU Alumni</a></li>
+                <li><a href="#">&gt; Dhaka UniversityTeacher's Housing</a></li>
+                <li><a href="#">&gt; Annual Performance Agreement (APA)</a></li>
+                <li><a href="#"><span class="animate">&gt;</span> Under Graduate Admission</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 p-2">
+            <div class="logo"><img src="img/dulogo-light_new.png" alt="Logo" width="70%"></div>
+            <div class="location my-2"><i class="bi bi-geo-alt me-2"></i> Administrative Building (Ground Floor)
+                Dhaka-1000, Bangladesh</div>
+                <div class="phone"><i class="bi bi-telephone me-2"></i> Phone: +88-09666911463</div>
+                <div class="phone my-2"><i class="bi bi-pip me-2"></i> Fax: 880-2-9667222</div>
+                <div class="phone"><i class="bi bi-envelope me-2"></i> Email: vcoffice@du.ac.bd, <br> registrar@du.ac.bd</div>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row flex-md-row-reverse">
+            <div class="col-md-3">
+                <ul>
+                    <li><a href="login.html">Student Login</a></li>
+                    <li><a href="login.html">DU Login</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <span><i class="bi bi-c-circle"></i> 2022 University of Dhaka. All Rights Reserved. Design and Development by <a href="https://facebook.com/shahin.alam.j" style="color: yellow">Shahin Alam</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- codes for footer section end here -->
+            
+</body>
+</html>
+
+
+<script>
+            //codes for scroll function
+const scrollElements = document.querySelectorAll(".js-scroll");
+const elementInView = (el, dividend = 0) => {
+const elementTop = el.getBoundingClientRect().top;
+return (
+	elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+	);
+};
+const elementOutofView = (el) => {
+const elementTop = el.getBoundingClientRect().top;
+return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+	);
+};
+const displayScrollElement = (element) => {
+	element.classList.add("scrolled");
+};
+const hideScrollElement = (element) => {
+	element.classList.remove("scrolled");
+};
+const handleScrollAnimation = () => {
+	scrollElements.forEach((el) => {
+    if (elementInView(el, 1.15)) {
+		displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+		hideScrollElement(el)
+    }
+  })
+}
+window.addEventListener("scroll", () => { 
+	handleScrollAnimation();
+});
+</script>

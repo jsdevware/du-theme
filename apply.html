@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Certificate / Marksheet | University of Dhaka</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/apply.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+            <!-- page preloader -->
+<div id="preloader" class="preloader">
+    <img src="img/preloader.gif" alt="preloader">
+</div>
+
+            <!-- go to top -->
+            <button onclick="topFunction()" id="topBtn" class="bi bi-arrow-up-square-fill"></button>
+            <script>
+                // scroll top
+                    var btn = $('#topBtn');
+                    $(window).scroll(function() {
+                    if ($(window).scrollTop() > 1000) {
+                        btn.addClass('show');
+                    } else {
+                        btn.removeClass('show');
+                    }
+                    });
+                    btn.on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({scrollTop:0});
+                    });
+            </script>
+
+            <!-- alert box -->
+<div id="alert_wrapper">
+    <div class="alert_box">
+        <img src="img/check-green.gif" alt="check mark" width="30%">
+        <h5>Language settings has been changed successfully</h5>
+        <button onclick="document.querySelector('#alert_wrapper').classList.remove('active');">OK</button>
+    </div>
+</div>
+            <!-- header section -->
+<header>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="registration.html">Sign Up</a></li>
+        <li>
+            <button class="bi bi-translate icon" onclick="document.querySelector('header ul li .list').classList.toggle('active')"> Translate</button>
+            <div class="list">
+                <button onclick="bangla()">বাংলা</button>
+                <button onclick="english()">English</button>
+            </div>
+        </li>
+    </ul>
+            <script>
+                function bangla(){
+                    document.querySelector('.english_version').classList.remove('active');
+                    document.querySelector('.bangla_version').classList.remove('hide');
+                    document.querySelector('header ul li .list').classList.remove('active');
+                    document.querySelector('#alert_wrapper').classList.add('active');
+                };
+
+                function english(){
+                    document.querySelector('.english_version').classList.add('active');
+                    document.querySelector('.bangla_version').classList.add('hide');
+                    document.querySelector('header ul li .list').classList.remove('active');
+                    document.querySelector('#alert_wrapper').classList.add('active');
+                };
+            </script>
+</header>
+            <!-- end header section -->
+
+            <!-- main section -->
+<main>
+        <!-- bangla version -->
+    <div class="bangla_version">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 mx-auto text-center">
+                    <div class="logo">
+                        <img src="img/fav.png" alt="logo">
+                        <img src="img/mujib_100_logo.png" alt="logo">
+                    </div>
+                    <div class="my-4">
+                        <h2><b>শিক্ষার্থীদের অনলাইন সেবা</b></h2>
+                        <h4>ঢাকা বিশ্ববিদ্যালয়</h4>
+                    </div>
+                </div>
+            </div>
+            <p>ঢাকা বিশ্ববিদ্যালয়ের বর্তমান ও প্রাক্তন শিক্ষার্থীদের জন্য অনলাইন ভিত্তিক বিভিন্ন সেবা প্রদান কার্যক্রম শুরু হয়েছে। এসকল সেবা পেতে হলে আবেদনকারীকে প্রথমে Sign Up করার মাধ্যমে একাউন্ট তৈরি করতে হবে। পরবর্তীতে Log in করার মাধ্যমে শিক্ষার্থীবৃন্দ স্ব স্ব ড্যাসবোর্ডে যেতে পারবেন। ড্যাসবোর্ড থেকে কাঙ্খিত সেবার জন্য আবেদন করা যাবে।</p>
+
+            <div class="fw-bold mb-3">বর্তমানে নিম্নলিখিত সেবাসমূহ অনলাইনের মাধ্যমে প্রদান করা হচ্ছে :</div>
+
+            <p>১. সার্টিফিকেট উত্তোলন <a href="#" class="text-warning ms-3">(নিয়মাবলী)</a></p>
+            <p>২. মার্কস্ সার্টিফিকেট উত্তোলন <a href="#" class="text-warning ms-3">(নিয়মাবলী)</a></p>
+
+            <div class="fw-bold my-3">পর্যায়ক্রমে আরো বিভিন্ন সেবা এই তালিকায় যুক্ত হবে ।</div>
+
+            <p><span class="text-success">মার্কস্ সার্টিফিকেট উত্তোলন</span> এবং <span class="text-success">ট্রান্সক্রিপ্ট উত্তোলন</span> দুইটি ভিন্ন সেবা। বর্তমানে মার্কস্ সার্টিফিকেট উত্তোলনের আবেদন অনলাইনে সম্পন্ন করা যাচ্ছে। কোন শিক্ষার্থী ট্রান্সক্রিপ্ট উত্তোলন করতে চাইলে তাদেরকে <span class="text-success">পরীক্ষা নিয়ন্ত্রকের ট্রান্সক্রিপ্ট সেকশন (কক্ষ নং ৩৩২)</span> এ যোগাযোগ করার জন্য অনুরোধ করা যাচ্ছে।</p>
+
+            <div class="text-center my-5">
+                    <h4>এখনই রেজিস্ট্রেশন করুন</h4>
+                    <a href="registration.html" class="btn btn-success mb-4">সাইন আপ</a>
+                    <h4>অথবা লগিন করুন</h4>
+                    <a href="login.html" class="btn btn-info">লগিন</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- english version -->
+    <div class="english_version">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 mx-auto text-center">
+                    <div class="logo">
+                        <img src="img/fav.png" alt="logo">
+                        <img src="img/mujib_100_logo.png" alt="logo">
+                    </div>
+                    <div class="my-4">
+                        <h2><b>Student Online Service</b></h2>
+                        <h4>University of Dhaka</h4>
+                    </div>
+                </div>
+            </div>
+            <p>The University of Dhaka is offering several online services for its present and past students. To avail these services applicant has to Sign Up to create an account. Later a student has to Log in to go to his/her dashboard. From the dashboard one can apply for the offered services.</p>
+
+            <div class="fw-bold mb-3">At the moment the following services are offered through online :</div>
+
+            <p>Application for Certificate <a href="#" class="text-warning ms-3">(Regulations)</a></p>
+            <p>Application for Marks Certificate <a href="#" class="text-warning ms-3">(Regulations)</a></p>
+
+            <div class="fw-bold my-3">Other services will be included gradually.</div>
+
+            <p>Application for <span class="text-success">Marks Certificate</span> and <span class="text-success">Academic Transcript</span> are two different services. Currently you can apply for Marks Certificate using this system. If you require Academic Transcript, please contact <span class="text-success">Transcript Section (Room No 332)</span> of Exam Controller Office.</p>
+                  
+            <div class="text-center my-5">
+                    <h4>Not registered yet ? Please</h4>
+                    <a href="registration.html" class="btn btn-success mb-4">Sign Up</a>
+                    <h4>Already registered ? Please</h4>
+                    <a href="login.html" class="btn btn-info">Login</a>
+            </div>
+        </div>
+    </div>
+</main>
+            <!-- end main section -->
+
+            <!-- footer section -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5>Helpline will remain open from Sunday to Thursday during office hours and will remain closed during Fridays, Saturdays.</h5>
+                <h5><span class="text-success">Helpline :</span> +88 09666 911 463 (Ext-4701)</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <h6><i class="bi bi-c-circle"></i>  2022 University of Dhaka. All Rights Reserved. Design and Development by <a href="https:facebook.com/shahin.alam.j" title="See Profile">Shahin Alam</a></h6>
+</div>
+            <!-- end footer section -->
+
+</body>
+</html>

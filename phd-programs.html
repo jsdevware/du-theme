@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PhD Programs | University of Dhaka</title>
+            <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- link -->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scrollFunction.css">
+    <link rel="stylesheet" href="css/phd-programs.css">
+            <!-- script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- page preloader -->
+<div id="preloader" class="preloader">
+<img src="img/preloader.gif" alt="preloader">
+</div>
+
+            <!-- go to top -->
+<button onclick="topFunction()" id="topBtn" class="bi bi-arrow-up-square-fill"></button>
+        <script>
+            // scroll top
+                var btn = $('#topBtn');
+                $(window).scroll(function() {
+                if ($(window).scrollTop() > 1000) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+                });
+                btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0});
+                });
+        </script>
+
+            <!-- codes for topBar -->
+<div id="topBar">
+    <div class="container">
+        <ul>
+            <li><a href="login.html"><i class="bi bi-key-fill fs-6"></i> DU LOGIN</a></li>
+            <li><a href="login.html"><i class="bi bi-key-fill fs-6"></i> STUDENTS LOGIN</a></li>
+            <li><a href="login.html"><i class="bi bi-search fs-6"></i> FIND PROGRAM</a></li>
+        </ul>
+    </div>
+</div>
+
+            <!-- codes for header section start from here -->
+<header>
+    <div class="container position-relative">
+                <!-- codes for left menu -->
+        <div class="left_menu">
+            <div class="icon bi bi-justify" onclick="document.querySelector('header .left_menu .icon').classList.toggle('bi-text-center');  document.querySelector('header .left_menu .left_menu_wrapper').classList.toggle('show');"></div>
+                <!-- left menu wrapper -->
+            <div class="left_menu_wrapper">
+                <ul>
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu1').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu1').classList.toggle('bi-x');">ABOUT   <span class="bi bi-plus menu1 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu1">
+                            <li class="bi bi-plus icon1" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links1').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon1').classList.toggle('bi-x');">
+                                <span class="float-end">ABOUT UNIVERSITY</span>
+                                <ul class="links links1">
+                                    <li><a href="historical-outline.html"><i class="bi bi-caret-right-fill"></i> Historical Outlne</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> University at a Glance</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Honoris Causa</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Message from the Vice Chancellor</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> List of Vice Chancellors</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="bi bi-plus icon2" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links2').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon2').classList.toggle('bi-x');">
+                                <span class="float-end">UNIVERSITY LEADERSHIP</span>
+                                <ul class="links links2">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chancellor</a></li>
+                                    <li><a href="vice-chancellor.html"><i class="bi bi-caret-right-fill"></i> Vice Chancellor</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Pro-Vice Chancellor (Administration)</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Pro-Vice Chancellor (Academic)</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Treasurer</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="bi bi-plus icon3" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links3').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon3').classList.toggle('bi-x');">
+                                <span class="float-end">GOVERNANCE FRAMEWORK</span>
+                                <ul class="links links3">
+                                    <li><a href="du-ordinance.html"><i class="bi bi-caret-right-fill"></i> University Ordinance</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Senate Members</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Syndicate Members</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> University Statutes</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu2').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu2').classList.toggle('bi-x');">ACADEMICS   <span class="bi bi-plus menu2 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu2">
+                            <li class="bi bi-plus icon4" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links4').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon4').classList.toggle('bi-x');">
+                                <span class="float-end">ACADEMIC</span>
+                                <ul class="links links4">
+                                    <li><a href="du-programs.html"><i class="bi bi-caret-right-fill"></i> Academic Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Academic Calendar</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Libraries</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="bi bi-plus icon5" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links5').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon5').classList.toggle('bi-x');">
+                                <span class="float-end">ACADEMIC BODIES</span>
+                                <ul class="links links5">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculties</a></li>
+                                    <li><a href="departments.html"><i class="bi bi-caret-right-fill"></i> Departments</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Institutes</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Constituent Colleges</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="bi bi-plus icon6" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links6').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon6').classList.toggle('bi-x');">
+                                <span class="float-end">ADMISSION</span>
+                                <ul class="links links6">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Graduate Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> MPhil Programs</a></li>
+                                    <li><a href="phd-programs.html"><i class="bi bi-caret-right-fill"></i> PhD Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> International Students</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu3').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu3').classList.toggle('bi-x');">ADMINISTRATION   <span class="bi bi-plus menu3 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu3">
+                            <li class="bi bi-plus icon7" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links7').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon7').classList.toggle('bi-x');">
+                                <span class="float-end">ACADEMIC HEADS</span>
+                                <ul class="links links7">
+                                    <li><a href="deans.html"><i class="bi bi-caret-right-fill"></i> Deans of Faculties</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chairman of Departments</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Directors of Institutes</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="bi bi-plus icon8" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links8').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon8').classList.toggle('bi-x');">
+                                <span class="float-end">HEAD OF ADMINISTRATIVE OFFICES</span>
+                                <ul class="links links8">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Directors of Research Centers & Bureau</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Provosts & Wardens of Halls and Hostel</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Head of Offices</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="bi bi-plus icon9" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links9').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon9').classList.toggle('bi-x');">
+                                <span class="float-end">OTHERS</span>
+                                <ul class="links links9">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> All Offices</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculty Member Profile</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Officer Profile</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu4').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu4').classList.toggle('bi-x');">STUDENTS   <span class="bi bi-plus menu4 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu4">
+                            <li class="bi bi-plus icon10" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links10').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon10').classList.toggle('bi-x');">
+                                <span class="float-end">STUDENT FACILITIES</span>
+                                <ul class="links links10">
+                                    <li><a href="sch-aids.html"><i class="bi bi-caret-right-fill"></i> Scholarships & Financial Aids</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Halls of Residence</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Transport Facilities</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Health Insurance</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="bi bi-plus icon11" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links11').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon11').classList.toggle('bi-x');">
+                                <span class="float-end">ONLINE SERVICES</span>
+                                <ul class="links links11">
+                                    <li><a href="apply.html"><i class="bi bi-caret-right-fill"></i> Apply for Certificate / Marksheet</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Apply for Govt. Scholarships</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Examination for Transcript</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Apply for Transcript</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Exam Form Fill-up</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="bi bi-plus icon12" onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu ul.links12').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu .icon12').classList.toggle('bi-x');">
+                                <span class="float-end">ALUMNI</span>
+                                <ul class="links links12">
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Alumni Association</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu5').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu5').classList.toggle('bi-x');">RESEARCH   <span class="bi bi-plus menu5 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu5">
+                            <li><a href="research.html"><i class="bi bi-caret-right-fill"></i> Research Centers & Bureaus</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Research & Publications</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Research Collaboration</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Funded Projects</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> University Journals</a></li>
+                        </ul>
+                    </li>
+
+                    <li><h6 onclick="document.querySelector('header .left_menu .left_menu_wrapper ul li ul.submenu6').classList.toggle('show'); document.querySelector('header .left_menu .left_menu_wrapper ul li .menu6').classList.toggle('bi-x');">LINKS   <span class="bi bi-plus menu6 float-end"></span></h6>
+                        <!-- submenu -->
+                        <ul class="submenu submenu6">
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Admission</a></li>
+                            <li><a href="login.html"><i class="bi bi-caret-right-fill"></i> DU Login</a></li>
+                            <li><a href="login.html"><i class="bi bi-caret-right-fill"></i> Student Login</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Telephone and Email Index</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Forms</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Approved NOCs</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> E-Tender</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Jobs</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Trust Funds</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Notice</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Latest News</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Events</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Tender</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Barta</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Media</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> APA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+                <!-- logo -->
+        <a href="index.html" class="logo"><img src="img/DU-Logo-Light.png" alt="Logo" width="100%"></a>
+
+                <!-- codes for main menu -->
+        <div class="menu">
+            <ul>
+                <li>ABOUT <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>ABOUT UNIVERSITY</h6>
+                                <ul>
+                                    <li><a href="historical-outline.html"><i class="bi bi-caret-right-fill"></i> Historical Outlne</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> University at a Glance</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Honoris Causa</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Message from the Vice Chancellor</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> List of Vice Chancellors</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>UNIVERSITY LEADERSHIP</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chancellor</a></li>
+                                    <li><a href="vice-chancellor.html"><i class="bi bi-caret-right-fill"></i> Vice Chancellor</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Pro-Vice Chancellor (Administration)</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Pro-Vice Chancellor (Academic)</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Treasurer</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>GOVERNANCE FRAMEWORK</h6>
+                                <ul>
+                                    <li><a href="du-ordinance.html"><i class="bi bi-caret-right-fill"></i> University Ordinance</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Senate Members</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Syndicate Members</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> University Statutes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>ACADEMICS <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>ACADEMIC</h6>
+                                <ul>
+                                    <li><a href="du-programs.html"><i class="bi bi-caret-right-fill"></i> Academic Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Academic Calendar</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Libraries</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>ACADEMIC BODIES</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculties</a></li>
+                                    <li><a href="departments.html"><i class="bi bi-caret-right-fill"></i> Departments</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Institutes</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Constituent Colleges</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>ADMISSION</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Graduate Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> MPhil Programs</a></li>
+                                    <li><a href="phd-programs.html"><i class="bi bi-caret-right-fill"></i> PhD Programs</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> International Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>ADMINISTRATION <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>ACADEMIC HEADS</h6>
+                                <ul>
+                                    <li><a href="deans.html"><i class="bi bi-caret-right-fill"></i> Deans of Faculties</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chairman of Departments</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Directors of Institutes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>HEAD OF ADMINISTRATIVE OFFICES</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Directors of Research Centers & Bureau</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Provosts & Wardens of Halls and Hostel</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Head of Offices</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>OTHERS</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> All Offices</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculty Member Profile</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Officer Profile</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>STUDENTS <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>STUDENT FACILITIES</h6>
+                                <ul>
+                                    <li><a href="sch-aids.html"><i class="bi bi-caret-right-fill"></i> Scholarships & Financial Aids</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Halls of Residence</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Transport Facilities</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Health Insurance</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>ONLINE SERVICES</h6>
+                                <ul>
+                                    <li><a href="apply.html"><i class="bi bi-caret-right-fill"></i> Apply for Certificate / Marksheet</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Apply for Govt. Scholarships</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Examination for Transcript</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Apply for Transcript</a></li>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Exam Form Fill-up</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>ALUMNI</h6>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-caret-right-fill"></i> Alumni Association</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">RESEARCH <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown submenu">
+                        <ul>
+                            <li><a href="research.html"><i class="bi bi-caret-right-fill"></i> Research Centers & Bureaus</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Research & Publications</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Research Collaboration</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Funded Projects</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> University Journals</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="position-relative">LINKS <i class="ms-2 bi bi-chevron-down"></i>
+                    <div class="dropdown submenu">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Admission</a></li>
+                            <li><a href="login.html"><i class="bi bi-caret-right-fill"></i> DU Login</a></li>
+                            <li><a href="login.html"><i class="bi bi-caret-right-fill"></i> Student Login</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Telephone and Email Index</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Forms</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Approved NOCs</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> E-Tender</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Jobs</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Trust Funds</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Notice</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Latest News</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Events</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Tender</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> DU Barta</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> Media</a></li>
+                            <li><a href="#"><i class="bi bi-caret-right-fill"></i> APA</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- header search box -->
+        <div class="header_search_wrapper">
+            <div class="icon" onclick="document.querySelector('header .header_search_wrapper form').classList.toggle('show')"><i class="bi bi-search"></i></div>
+            <form action="">
+                <div class="input"><input type="radio" name="what_search" id="web" checked> <label for="web">Web</label></div>
+                <div class="input"><input type="radio" name="what_search" id="people"> <label for="people">People</label></div>
+                <div class="input"><input type="search" name="header_search" id="header_search" placeholder="Search"></div>
+            </form>
+        </div>
+    </div>
+
+                    <script>
+                        window.onscroll = function() {headerSticky()};
+                        
+                        function headerSticky() {
+                        if (document.documentElement.scrollTop > 50) {
+                            document.querySelector("header").className = "sticky_header";
+                            document.querySelector ("header a.logo img").src="img/du-logo.png";
+                            } else {
+                                document.querySelector("header").className = "";
+                                document.querySelector ("header a.logo img").src="img/DU-Logo-Light.png";
+                            }
+                        }
+                    </script>
+</header>
+            <!-- codes for header section end here -->
+<!-- banner -->
+<section id="banner">
+    <div class="secTitle"><h3>PhD Admission</h3></div>
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="index.html"><i class="bi bi-house-door-fill me-2"></i> Home</a></li>
+            <li><i class="bi bi-circle-fill"></i></li>
+            <li>PhD Programs</li>
+        </ul>
+    </div>
+</section>
+
+            <!-- codes for footer section start from here -->
+
+            <!-- codes for main section start from here -->
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 p-3">
+                <div class="notice">
+                    <h5>২০২২-২০২৩ শিক্ষাবর্ষে পিএইচ.ডি. প্রোগ্রামে ভর্তি (জুলাই - ডিসেম্বর)</h5>
+                    <p>পিএইচ.ডি. প্রোগ্রামে ভর্তির জন্য আগ্রহী প্রার্থীদের কাছ থেকে নির্ধারিত ফরমে আবেদনপত্র আহবান করা যাচ্ছে। প্রার্থীদেরকে সংশ্লিষ্ট বিভাগের/ইনস্টিটিউটের শিক্ষকদের মধ্য থেকে তত্ত্বাবধায়ক নির্বাচন করে তাঁর/তাঁদের অধীনে এবং মাধ্যমে এম.ফিল. গবেষণার আবেদন করতে হবে। ঢাকা বিশ্ববিদ্যালয়ের ওয়েবসাইটে (https://du.ac.bd) আবেদন ফরম ডাউনলোড করা যাবে। ভর্তি ফরমের ফিস বাবদ জনতা ব্যাংকে (ঢা বি, টি.এস.সি.শাখায়) ১০০০/-(এক হাজার) টাকা (অফেরৎ যোগ্য) জমা দিতে হবে। আবেদনপত্র স্পষ্ট করে লিখে/টাইপ করে যথাযথভাবে পূরণ করে সংশ্লিষ্ট বিভাগের চেয়ারম্যান/ইনস্টিটিউটের পরিচালকের অফিসে জমা দিতে হবে। আবেদনপত্রের সাথে ভর্তি ফরমের ফিস বাবদ জমাকৃত ১০০০/-(এক হাজার) টাকা জমার রশিদের মূলকপি, সকল পরীক্ষার নম্বরপত্রের ফটোকপি, সম্প্রতি তোলা ১ (এক) কপি পাসপোর্ট সাইজের ছবি সংশ্লিষ্ট তত্ত্বাবধায়ক/বিভাগের চেয়ারম্যান/ ইনস্টিটিউটের পরিচালক কর্তৃক সত্যায়িত করে জমা দিতে হবে এবং গবেষণার একটি রূপরেখা (Synopsis) জমা দিতে হবে।</p>
+
+                    <h5>বিদেশ থেকে অর্জিত ডিগ্রীর সমতা নিরূপণ করার পর ভর্তির আবেদন করতে হবে।</h5>
+                    <b>ভর্তির শিক্ষাগত ও অন্যান্য যোগ্যতা:</b>
+                    <p>এম.ফিল. পাশ। ঢাকা বিশ্ববিদ্যালয় ও পাবলিক বিশ্ববিদ্যালয় ব্যতিত অন্য যে কোন বিশ্ববিদ্যালয় থেকে এম.ফিল. ডিগ্রীধারীদের আবেদনপত্র সংগ্রহের পূর্বে তাঁদের অর্জিত ডিগ্রীর সমতা নিরূপনের জন্য ঢাকা বিশ্ববিদ্যালয়ের পিএইচ.ডি. ও এম.ফিল. ভর্তির যোগ্যতা যাচাই এবং সমতা নিরূপণ কমিটির আহ্বায়কের (ডিন, জীববিজ্ঞান অনুষদ, কার্জন হল সংলগ্ন) নিকট দরখাস্ত জমা দিতে হবে।</p>
+
+                    <div class="text-center mb-3">অথবা</div>
+
+                    <p>৪ (চার) বছর মেয়াদি স্নাতক সম্মান ডিগ্রী এবং ১ (এক) বছর মেয়াদি মাস্টার্স ডিগ্রী। দেশের ভেতরে বেসরকারী বিশ্ববিদ্যালয় থেকে স্নাতক (সম্মান) এবং স্নাতকোত্তর ডিগ্রী থাকলে ঢাকা বিশ্ববিদ্যালয়ে পিএইচ.ডি. প্রোগ্রামে সরাসরি ভর্তি হওয়া যাবে না। পিএইচ.ডি. প্রোগ্রামে ভর্তি হতে হলে প্রথমে তাঁদের ঢাকা বিশ্ববিদ্যালয়ের এম. ফিল. প্রোগ্রামে ভর্তি হতে হবে</p>
+                    <p>কলা/সামাজিক বিজ্ঞান/বিজনেস স্টাডিজ অনুষদের ক্ষেত্রে স্বীকৃতমানের জার্নালে প্রার্থীদের কমপক্ষে ২টি গবেষণামূলক প্রকাশিত প্রবন্ধ থাকতে হবে। অন্তত ১টি গবেষণামূলক প্রকাশনা একক নামে হতে হবে।</p>
+                    <p>শিক্ষাজীবনে সকল পরীক্ষায় কমপক্ষে ২য় বিভাগ/শ্রেণীসহ ন্যূনতম ৫০% নম্বর থাকতে হবে। CGPA নিয়মে থাকলে মাধ্যমিক/সমমান থেকে স্নাতকোত্তর পর্যন্ত সকল পরীক্ষায় CGPA ৫-এর মধ্যে ৩.৫ অথবা CGPA ৪-এর মধ্যে ৩ থাকতে হবে। উল্লেখিত ন্যূনতম নম্বর বজায় রেখে সংশ্লিষ্ট বিভাগ/ইনস্টিটিউট/পিএইচ.ডি. উপ-কমিটি/অনুষদ নিজ নিজ ক্ষেত্রে শিক্ষাগত যোগ্যতা নির্ধারণ করবে।</p>
+
+                    <div class="text-center mb-3">অথবা</div>
+
+                    <p>৩ (তিন) বছর মেয়াদি স্নাতক সম্মান এবং এক বছর মেয়াদি মাস্টার্স ডিগ্রীপ্রাপ্তদের পিএইচ. ডি. প্রোগ্রামে রেজিস্ট্রেশনের ক্ষেত্রে নিম্নলিখিত শিক্ষাগত ও অন্যান্য যোগ্যতা থাকতে হবে:</p>
+                    <p>ক) প্রার্থীদের শিক্ষাজীবনে সকল পরীক্ষায় কমপক্ষে ২য় বিভাগ/শ্রেণীসহ ন্যূনতম ৫০% নম্বর থাকতে হবে। CGPA নিয়মে থাকলে মাধ্যমিক/সমমান থেকে স্নাতকোত্তর পর্যন্ত সকল পরীক্ষায় CGPA ৫-এর মধ্যে ৩.৫ অথবা CGPA ৪-এর মধ্যে ৩ থাকতে হবে। এই ন্যূনতম নম্বর বজায় রেখে সংশ্লিষ্ট বিভাগ/ইনস্টিটিউট/পিএইচ.ডি. উপ-কমিটি/অনুষদ নিজ নিজ ক্ষেত্রে শিক্ষাগত যোগ্যতা নির্ধারণ করবে। পিএইচ.ডি. প্রোগ্রামে প্রচলিত নিয়ম অনুযায়ী রেজিস্ট্রেশনের অন্যান্য যোগ্যতা ও শর্তাবলি প্রযোজ্য হবে।</p>
+                    <p>খ) প্রার্থীদের স্নাতক পর্যায়ে কোন স্বীকৃত শিক্ষা প্রতিষ্ঠানে কমপক্ষে দুই বছরের শিক্ষকতার অভিজ্ঞতা থাকতে হবে অথবা কোন স্বীকৃতমানের গবেষণা প্রতিষ্ঠানে কমপক্ষে দুই বছরের গবেষণা সংক্রান্ত কাজের অভিজ্ঞতা অথবা সরকারি/বেসরকারি/ স্বায়ত্তশাসিত/আধাস্বায়ত্তশাসিত প্রতিষ্ঠানে কমপক্ষে দুই বছরের চাকরির অভিজ্ঞতা থাকতে হবে</p>
+                    <p>এবং</p>
+                    <p>গ) স্বীকৃতমানের জার্নালে প্রার্থীদের কমপক্ষে ২টি গবেষণামূলক প্রকাশিত প্রবন্ধ থাকতে হবে। তবে কলা/সামাজিক বিজ্ঞান/ বিজনেস স্টাডিজ অনুষদের ক্ষেত্রে অন্তত ১টি গবেষণা প্রকাশনা একক নামে হতে হবে।</p>
+                    <p>অন্য বিষয়ে ডিগ্রীপ্রাপ্ত ছাত্র/ছাত্রী আর্থ এন্ড এনভায়রনমেন্টাল সায়েন্সেস অনুষদের অন্তর্গত বিভাগসমুহে সংশ্লিষ্ট বিভাগের একাডেমিক কমিটি এবং অনুষদীয় পিএইচ.ডি. উপ-কমিটির সুপারিশক্রমে ভর্তি হতে পারবে। এক্ষেত্রে সুপারভাইজারের পরামর্শে বিশেষ ব্যবস্থায় সংশ্লিষ্ট বিষয়ে ন্যূনতম ৪ ক্রেডিটের ১টি কোর্স-ওয়ার্ক থাকবে।</p>
+                    <p><strong><b>ভর্তি প্রক্রিয়া:</b></strong> প্রার্থী কর্তৃক যথাযথভাবে পূরণের পর আবেদনপত্র সংশ্লিষ্ট বিভাগ/ইনস্টিটিউটে জমা দিতে হবে। অতঃপর উক্ত ভর্তির আবেদন সংশ্লিষ্ট তত্ত্বাবধায়ক, বিভাগের/ইনস্টিটিউটের একাডেমিক কমিটি, পিএইচ.ডি. উপ-কমিটি ও অনুষদ সভা এবং ‘বোর্ড অব এ্যাডভান্সড স্টাডিজ’ সুপারিশ করলে একাডেমিক পরিষদ পিএইচ.ডি. প্রোগ্রামে ভর্তির বিষয়ে সিদ্ধান্ত প্রদান করবে।</p>
+                    <p>কলা/সামাজিক বিজ্ঞান/বিজনেস স্টাডিজ/আইন/চারুকলা/বিজ্ঞান/জীববিজ্ঞান/ফার্মেসী/ইঞ্জিনিয়ারিং এন্ড টেকনোলজী/আর্থ এন্ড এনভায়রনমেন্টাল সায়েন্সেস এবং স্নাতকোত্তর চিকিৎসা বিজ্ঞান ও গবেষণা অনুষদের বিভাগসমূহে এবং ইনস্টিটিউটসমূহে পূর্ণকালীন সময়ের পিএইচ.ডি. গবেষকদের নিয়মিত কোর্স নিয়মানুযায়ী গবেষণায় যোগদানের তারিখ থেকে ৪ (চার) বছরের হবে এবং ১ (এক) বছরের ছুটি নিয়ে যোগদান করতে হবে। তাঁরা ২ (দুই) বছর পর থিসিস জমা দিতে পারবেন। বিভাগীয় পিএইচ.ডি. সাব-কমিটি প্রয়োজন মনে করলে কোনো গবেষককে নিয়মানুযায়ী কোর্সওয়ার্ক করার শর্তারোপ করতে পারবে।</p>
+                    <p>কলা/সামাজিক বিজ্ঞান/বিজনেস স্টাডিজ/আইন/চারুকলা/বিজ্ঞান/জীববিজ্ঞান/ফার্মেসী/ইঞ্জিনিয়ারিং এন্ড টেকনোলজী/আর্থ এন্ড এনভায়রনমেন্টাল সায়েন্সেস অনুষদের বিভাগসমূহে এবং ইনস্টিটিউটসমূহে খন্ডকালীন পিএইচ.ডি. প্রোগ্রামের ব্যবস্থা থাকবে। খন্ডকালীন পিএইচ.ডি. প্রোগ্রামে রেজিস্ট্রেশনের মেয়াদ হবে গবেষণায় যোগদানের তারিখ থেকে ৫ (পাঁচ) বছর। ৪ (চার) বছর পরে গবেষক থিসিস জমা দিতে পারবেন। তবে কোনো গবেষক যদি তিন বছর শেষে কাজ সম্পন্ন করে থিসিস জমা দিতে চান তাহলে তত্ত্বাবধায়ক এবং বিভাগীয় একাডেমিক কমিটির সুপারিশসহ একাডেমিক কাউন্সিলের অনুমোদন নিয়ে বিশেষ বিবেচনায় থিসিস জমা দিতে পারবেন। বিভাগীয় পিএইচ.ডি. সাব-কমিটি (প্রযোজ্য ক্ষেত্রে) প্রয়োজন মনে করলে কোনো গবেষককে নিয়মানুযায়ী কোর্সওয়ার্ক করার শর্তারোপ করতে পারবে।</p>
+                    <p>বিজ্ঞান/জীববিজ্ঞান/ফার্মেসী/ইঞ্জিনিয়ারিং এন্ড টেকনোলজী/আর্থ এন্ড এনভায়রনমেন্টাল সায়েন্সেস ও আইন অনুষদ এবং ইনস্টিটিউটসমূহে ভর্তিকৃত ছাত্র/ছাত্রীদের জন্য কোর্স বাধ্যতামূলক হবে। <br>
+                    পিএইচ.ডি. প্রোগ্রামে ভর্তির অনুমতিপত্র পাওয়ার পর নির্ধারিত সময়ে ভর্তির ফিস জমা দিতে হবে। নির্ধারিত সময়ে ভর্তির ফিস জমা না দিলে নিয়ামানুযায়ী প্রতি দিনের জন্য ৫০(পঞ্চাশ) টাকা হারে বিলম্ব ফি দিতে হবে। থিসিস জমা না হওয়া পর্যন্ত প্রতি বছর একই সময় রেজিস্ট্রেশন ফিস দিতে হবে। সময়মত রেজিস্ট্রেশন ফিস জমা না দিলে নিয়মানুযায়ী ধার্যকৃত বিলম্ব ফিস প্রদান করতে হবে।</p>
+                    <p><strong><b>এম.ফিল. থেকে পিএইচ.ডি. প্রোগ্রামে স্থানান্তর:</b></strong> যে সকল প্রার্থী এম.ফিল. ১ম বর্ষের লিখিত ও মৌখিক পরীক্ষায় কৃতকার্য হয়েছেন এবং ২য় বর্ষের মধ্যে আবেদন করেছেন তাঁদেরকে (ফলাফল প্রকাশের তারিখ থেকে এক বছরের মধ্যে) গবেষণায় সন্তোষজনক অগ্রগতির ভিত্তিতে তত্ত্বাবধায়কের সুপারিশসহ সংশ্লিষ্ট বিভাগীয় একাডেমিক কমিটি, পিএইচ.ডি. উপ-কমিটি, অনুষদ সভার সুপারিশ এবং বোর্ড অব এ্যাডভান্সড স্টাডিজ ও একাডেমিক পরিষদের সিদ্ধান্তক্রমে এম.ফিল. থেকে পিএইচ.ডি. প্রোগ্রামে স্থানান্তর করা যাবে। কলা অনুষদভুক্ত বিভাগসমূহের জন্য এম.ফিল. থেকে পিএইচ.ডি-তে স্থানান্তরের ক্ষেত্রে এম.ফিল. গবেষককে গবেষণা সংশ্লিষ্ট বিষয়ে অন্তত একটি গবষণামুলক প্রবন্ধ একক নামে স্বীকৃত জার্নালে প্রকাশিত থাকতে হবে। এরূপ স্থানান্তরের ক্ষেত্রে রেজিস্ট্রেশনের মেয়াদ সর্বোচ্চ ৯(নয়) বছর।</p>
+                    <p><strong><b>ছুটি:</b></strong> ঢাকা বিশ্ববিদ্যালয়ের চাকরিরত ভর্তিচ্ছু প্রার্থী ব্যতিত অন্যান্য প্রতিষ্ঠানে চাকরিরত প্রার্থীদের নিয়োগকর্তার নিকট থেকে কমপক্ষে ১ (এক) বছরের ছুটি নিয়ে পূর্ণকালীন পিএইচ.ডি. প্রোগ্রামে যোগদান করতে হবে। তবে তত্ত্বাবধায়ক ও বিভাগীয় একাডেমিক কমিটির সুপারিশের পরিপ্রেক্ষিতে একাডেমিক পরিষদ সভার অনুমোদনক্রমে ছুটির বিষয়টি শিথিল করা যেতে পারে। উল্লেখ্য, চাকরিরত এম.ফিল. ডিগ্রীধারী অথবা এম. ফিল থেকে পিএইচ.ডি. প্রোগ্রামে স্থানান্তরিতদের ছুটি নেওয়া আবশ্যিক নয়, তবে কর্মক্ষেত্রের নিয়োগকর্তার নিকট থেকে অনুমতি নিয়ে পিএইচ.ডি. প্রোগ্রামে যোগদান করতে হবে। খন্ডকালীন পিএইচ.ডি. প্রোগ্রাম এর ক্ষেত্রে ছুটি নেওয়া বাধ্যতামূলক নয়। তবে নিয়োগকর্তার অনুমতি নিতে হবে।</p>
+                    <p><strong><b>বৃত্তি:</b></strong> প্রতি শিক্ষাবর্ষে আবেদনকারীদের মধ্য থেকে মেধার ভিত্তিতে মোট ১০ টি বৃত্তি (মাসিক ভিত্তিতে) বিশ্ববিদ্যালয় মঞ্জুরী কমিশন কর্তৃক নির্ধারিত হারে মঞ্জুর করা হবে। তবে গবেষক চাকরিরত থাকলে অথবা অন্য কোন প্রতিষ্ঠান থেকে বৃত্তি/আর্থিক সহযোগিতা পেলে, এ বৃত্তি ভোগ করার যোগ্য বিবেচিত হবে না। ২য় বর্ষে এই বৃত্তি নবায়নের ব্যবস্থা থাকবে। এ ছাড়াও বাংলাদেশ মুক্তিযোদ্ধা কল্যাণ ট্রাস্টের অর্থায়নে মুক্তিযুদ্ধ ভিত্তিক গবেষণা কর্মের জন্য ‘বঙ্গবন্ধু পিএইচ.ডি. ছাত্র বৃত্তি’ নামে আরও দুইটি বৃত্তি মঞ্জুর করা হবে।</p>
+                    <p><strong><b>ফিস ও অন্যান্য আর্থিক বিষয়:</b></strong> পিএইচ.ডি. প্রোগ্রামের অনুমোদিত ফিস এবং অন্যান্য প্রদেয় হারের বিষয় হিসাব পরিচালকের অফিস থেকে জানা যাবে।</p>
+                    <p>আবেদনকারী যে হলের ছাত্র/ছাত্রী হিসেবে পিএইচ.ডি. প্রোগ্রামে ভর্তি হতে ইচ্ছুক সে হলের প্রাধ্যক্ষের স্বাক্ষর নেওয়ার পর আবেদনপত্র সংশ্লিষ্ট বিভাগে/ইনস্টিটিউটে জমা দিতে হবে। উল্লেখ্য যে, ঢাকা বিশ্ববিদ্যালয়ের কোন ছাত্র/ছাত্রী যে হল থেকে এম.ফিল. অথবা স্নাতকোত্তর ডিগ্রী লাভ করেছেন সে হলে পিএইচ.ডি. প্রোগ্রামে ভর্তি হতে পারবেন না।</p>
+                    <p>একজন তত্ত্বাবধায়ক এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে দুটো মিলিয়ে এক সাথে সর্বমোট (পূর্বাপর) অনধিক এককভাবে ৮(আট) জন অথবা যৌথভাবে ১০(দশ) জন গবেষকের তত্ত্বাবধায়ক হিসাবে দায়িত্ব পালন করতে পারবেন।</p>
+                    <p>ঢাকা বিশ্ববিদ্যালয়ের যেসব শিক্ষক পিএইচ.ডি./এম.ফিল. করবেন তাঁদেরকে উল্লেখিত গবেষক সংখ্যায় অন্তর্ভুক্ত করা হবে না। অধ্যাপক, সহযোগী অধ্যাপক এবং পিএইচ.ডি. ডিগ্রীধারী সহকারী অধ্যাপকবৃন্দ পিএইচ.ডি. প্রোগ্রামের গবেষকদের গবেষণা তত্ত্বাবধায়ন করতে পারবেন।</p>
+                    <p>এই বিজ্ঞপ্তিতে উল্লেখিত যোগ্যতা ও শর্তপূরণকারীরাই শুধুমাত্র পিএইচ.ডি. প্রোগ্রামে ভর্তির আবেদন করার যোগ্য বলে বিবেচিত হবেন। কোন তথ্য গোপন করলে বা ভুল তথ্য দিলে ভর্তি বাতিল বলে গণ্য হবে।</p>
+                    <h3>----------------</h3>
+                    <b>রেজিস্ট্রার</b>   <br>
+                    <span>ঢাকা বিশ্ববিদ্যালয়</span>
+                    <div class="mt-3">
+                        <b>সংযুক্তিঃ</b> <br>
+                        <a href="https://ssl.du.ac.bd/fontView/images/file/1657012868202207051517.pdf">মুল বিজ্ঞপ্তিটি দেখতে ক্লিক করুন</a>   <br>
+                        <a href="https://ssl.du.ac.bd/fontView/images/file/1645683390PhDFormType-rotated.pdf">পি.এইচ.ডি. প্রোগ্রামে ভর্তি ও বৃত্তির আবেদন পত্র</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3">
+                <div class="links scroll-element js-scroll scrolled fade-in-left">
+                    <div class="title"><i class="bi bi-dash-lg"></i> ACADEMIC</div>
+                    <ul>
+                        <li><a href="du-programs.html"><i class="bi bi-caret-right-fill"></i> Academic Programs</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Academic Calendar</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Libraries</a></li>
+                    </ul>
+                </div>
+                <div class="links scroll-element js-scroll scrolled fade-in-right">
+                    <div class="title"><i class="bi bi-dash-lg"></i> ACADEMIC BODIES</div>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Faculties</a></li>
+                        <li><a href="departments.html"><i class="bi bi-caret-right-fill"></i> Departments</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Institutes</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Constituent Colleges</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Affiliated Colleges</a></li>
+                    </ul>
+                </div>
+                <div class="links scroll-element js-scroll scrolled fade-in-left">
+                    <div class="title"><i class="bi bi-dash-lg"></i> ADMISSION</div>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Undergraduate Programs</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Graduate Programs</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> MPhil Programs</a></li>
+                        <li><a href="phd-programs.html"><i class="bi bi-caret-right-fill"></i> PhD Programs</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> International Students</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- codes for main section end here -->
+<footer>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 p-2">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><a href="#">&gt; Approved NOCs</a></li>
+                <li><a href="#">&gt; Jobs</a></li>
+                <li><a href="#">&gt; E-Tender</a></li>
+                <li><a href="#">&gt; DU Tender</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 p-2 pt-5">
+            <ul>
+                <li><a href="#">&gt; DU Forms</a></li>
+                <li><a href="#">&gt; DU Institutional Repository</a></li>
+                <li><a href="#">&gt; DU Barta</a></li>
+                <li><a href="#">&gt; DU Library</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 p-2 pt-5">
+            <ul>
+                <li><a href="#">&gt; Result Archive</a></li>
+                <li><a href="#">&gt; DU Alumni</a></li>
+                <li><a href="#">&gt; Dhaka UniversityTeacher's Housing</a></li>
+                <li><a href="#">&gt; Annual Performance Agreement (APA)</a></li>
+                <li><a href="#"><span class="animate">&gt;</span> Under Graduate Admission</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 p-2">
+            <div class="logo"><img src="img/dulogo-light_new.png" alt="Logo" width="70%"></div>
+            <div class="location my-2"><i class="bi bi-geo-alt me-2"></i> Administrative Building (Ground Floor)
+                Dhaka-1000, Bangladesh</div>
+                <div class="phone"><i class="bi bi-telephone me-2"></i> Phone: +88-09666911463</div>
+                <div class="phone my-2"><i class="bi bi-pip me-2"></i> Fax: 880-2-9667222</div>
+                <div class="phone"><i class="bi bi-envelope me-2"></i> Email: vcoffice@du.ac.bd, <br> registrar@du.ac.bd</div>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row flex-md-row-reverse">
+            <div class="col-md-3">
+                <ul>
+                    <li><a href="login.html">Student Login</a></li>
+                    <li><a href="login.html">DU Login</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <span><i class="bi bi-c-circle"></i> 2022 University of Dhaka. All Rights Reserved. Design and Development by <a href="https://facebook.com/shahin.alam.j" style="color: yellow">Shahin Alam</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- codes for footer section end here -->
+            
+</body>
+</html>
+
+
+<script>
+    //codes for scroll function
+const scrollElements = document.querySelectorAll(".js-scroll");
+const elementInView = (el, dividend = 0) => {
+const elementTop = el.getBoundingClientRect().top;
+return (
+elementTop <=
+(window.innerHeight || document.documentElement.clientHeight) / dividend
+);
+};
+const elementOutofView = (el) => {
+const elementTop = el.getBoundingClientRect().top;
+return (
+elementTop > (window.innerHeight || document.documentElement.clientHeight)
+);
+};
+const displayScrollElement = (element) => {
+element.classList.add("scrolled");
+};
+const hideScrollElement = (element) => {
+element.classList.remove("scrolled");
+};
+const handleScrollAnimation = () => {
+scrollElements.forEach((el) => {
+if (elementInView(el, 1.15)) {
+displayScrollElement(el);
+} else if (elementOutofView(el)) {
+hideScrollElement(el)
+}
+})
+}
+window.addEventListener("scroll", () => { 
+handleScrollAnimation();
+});
+</script>
