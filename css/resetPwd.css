@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Ink&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: raleway; background: #f3f3f9;}
+ul {list-style-type: none;}
+a {text-decoration: none;}
+ 
+/* preloader */
+#preloader {position: fixed; z-index: 1000; overflow: hidden; background: #7EC4CC; width: 100vw; height: 100vh; top: 0; left: 0; animation: preloader 0s 3s forwards;}
+@keyframes preloader {
+    100% {transform: scale(0);}
+}
+#preloader img {position: absolute; width: 30%; left: 35%; top: 50%; transform: translateY(-50%);}
+
+/* forgot pwd info */
+.fgtPwd-box-wrapper {width: 40%; position: absolute; top: 50%; transform: translateY(-50%); left: 30%;}
+.fgtPwd-box-wrapper .fgtPwd-box {background: #fefefe; border-radius: 3px; box-shadow: 0px 0px 5px #ddd;}
+.fgtPwd-box-wrapper .fgtPwd-box .form-group {display: flex;}
+.fgtPwd-box-wrapper .fgtPwd-box .form-group .item {width: 30%; align-self: center; font-size: 14px;}
+.fgtPwd-box-wrapper .fgtPwd-box .form-group .item:last-child {width: 70%; text-align: right;}
+.fgtPwd-box-wrapper .fgtPwd-box .form-group .item:first-child {text-align: right;}
+.fgtPwd-box-wrapper .fgtPwd-box .form-group input {padding: 5px 10px; border: 1px solid #f3f3f9; width: 90%;}
+.fgtPwd-box-wrapper .fgtPwd-box .form-group input:focus {outline: none; border: 1px solid #ddd;}
+/* captcha */
+.fgtPwd-box-wrapper .fgtPwd-box .captcha-wrapper {width: 50%; margin: auto; padding: 10px 0; position: relative;}
+.fgtPwd-box-wrapper .fgtPwd-box .captcha-wrapper input {font-family: fantasy; letter-spacing: 5px; padding: 5px 10px; border: 1px solid #f3f3f9; text-align: center; width: 90%; background: lightblue;}
+.fgtPwd-box-wrapper .fgtPwd-box .captcha-wrapper input:focus {outline: none;}
+.fgtPwd-box-wrapper .fgtPwd-box .captcha-wrapper span {font-size: 20px; cursor: pointer; width: 10%;}
+
+.fgtPwd-box-wrapper .fgtPwd-box input[type=submit] {background: #3097D1; border: none; padding: 5px 10px; color: #fff; border-radius: 3px; margin-right: 5px; font-size: 14px;}
+.fgtPwd-box-wrapper .fgtPwd-box input[type=submit]:hover {background: #2a88bd;}
+.fgtPwd-box-wrapper .fgtPwd-box a.backBtn {background: #cbb956; padding: 7px 15px; color: #fff; border-radius: 3px; font-size: 14px;}
+.fgtPwd-box-wrapper .fgtPwd-box a.backBtn:hover {background: #c5b143;}
+
+
+/* codes for responsive design */
+/* for desktop */
+@media screen and (max-width: 1024px) {
+    
+    .fgtPwd-box-wrapper {width: 60%; left: 20%;}
+
+}
+
+/* for tablet */
+@media screen and (max-width: 768px) {
+    
+    .fgtPwd-box-wrapper .fgtPwd-box .captcha-wrapper {width: 70%;}
+
+}
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+    
+    #preloader img {width: 100%; left: 0;}
+    .fgtPwd-box-wrapper {width: 90%; left: 5%;}
+    .fgtPwd-box-wrapper .fgtPwd-box .captcha-wrapper {width: 100%;}
+
+}

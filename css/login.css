@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Ink&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: raleway; background: #f3f3f9;}
+ul {list-style-type: none;}
+a {text-decoration: none;}
+ 
+/* preloader */
+#preloader {position: fixed; z-index: 1000; overflow: hidden; background: #7EC4CC; width: 100vw; height: 100vh; top: 0; left: 0; animation: preloader 0s 3s forwards;}
+@keyframes preloader {
+    100% {transform: scale(0);}
+}
+#preloader img {position: absolute; width: 30%; left: 35%; top: 50%; transform: translateY(-50%);}
+
+/* login info */
+.login-box-wrapper {width: 40%; margin-top: 10%; margin-bottom: 10%; margin-left: 30%;}
+.login-box-wrapper .login-box {background: #fefefe; margin: 20px 0; border-radius: 3px; box-shadow: 0px 0px 5px #ddd}
+.login-box-wrapper .login-box .form-group {display: flex;}
+.login-box-wrapper .login-box .form-group .item {width: 30%; align-self: center; font-size: 14px;}
+.login-box-wrapper .login-box .form-group .item:last-child {width: 70%;}
+.login-box-wrapper .login-box .form-group .item:first-child {text-align: right;}
+.login-box-wrapper .login-box .form-group input {padding: 5px 10px; border: 1px solid #f3f3f9; width: 90%;}
+.login-box-wrapper .login-box .form-group input:focus {outline: none; border: 1px solid #ddd;}
+.login-box-wrapper .login-box input[type=submit] {background: #3097D1; border: none; padding: 5px 10px; color: #fff; border-radius: 3px; margin-right: 5px; font-size: 14px;}
+.login-box-wrapper .login-box a:hover {color: #333;}
+.login-box-wrapper .login-box input[type=submit]:hover {background: #2a88bd;}
+.login-box-wrapper .login-box button.googleSignInBtn {border: none; background: #fff; box-shadow: 1px 1px 5px #ccc; padding: 8px 20px; font-size: 14px; border-radius: 5px;}
+.login-box-wrapper .login-box button.googleSignInBtn:hover {box-shadow: inset 1px 1px 5px #ccc;}
+
+
+/* codes for responsive design */
+/* for desktop */
+@media screen and (max-width: 1024px) {
+    
+    .login-box-wrapper {width: 60%; margin-left: 20%; margin-top: 5%; margin-bottom: 5%;}
+
+}
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+    
+    #preloader img {width: 100%; left: 0;}
+    .login-box-wrapper {width: 90%; margin-left: 5%;}
+
+}

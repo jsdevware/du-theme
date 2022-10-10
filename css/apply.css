@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Ink&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: raleway; color: #666;}
+ul {list-style-type: none; padding: 0; margin: 0;}
+a {text-decoration: none;}
+button {border: none; background: none;}
+ 
+/* preloader */
+#preloader {position: fixed; z-index: 1000; overflow: hidden; background: #7EC4CC; width: 100vw; height: 100vh; top: 0; left: 0; animation: preloader 0s 3s forwards;}
+@keyframes preloader {
+    100% {transform: scale(0);}
+}
+#preloader img {position: absolute; width: 30%; left: 35%; top: 50%; transform: translateY(-50%);}
+
+/* go to top */
+#topBtn {color: #FFB606; position: fixed; bottom: 30px; right: 30px; font-size: 35px; display: none; z-index: 99; opacity: 0.5; transition: all 0.5s;}
+#topBtn.show {display: block;}
+#topBtn:hover {opacity: 1; bottom: 35px;}
+
+/* alert box */
+#alert_wrapper {position: fixed; width: 100%; height: 100%; top: 0; left: 0; background: #00000090; z-index: 11; display: none;}
+#alert_wrapper.active {display: block;}
+#alert_wrapper .alert_box {background: #fafbfb; width: 40%; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); left: 30%; border-radius: 5px; padding: 20px 10px;}
+#alert_wrapper .alert_box h5 {margin: 20px 0; color: green;}
+#alert_wrapper .alert_box button {background: #3097D1; color: #fff; padding: 0 10px; font-size: 20px; border-radius: 3px;}
+
+/* header section */
+header {position: sticky; top: 0; left: 0; border-bottom: 1px solid #3097D1; z-index: 10; background: #f3f3f9;}
+header ul {display: flex; justify-content: end; padding: 0 50px;}
+header ul li {align-self: center; position: relative;}
+header ul li a {color: #333; padding: 15px;}
+header ul li a:hover {color: #3097D1;}
+header ul li button.icon {background: #3097D1; color: #fff; padding: 15px;}
+header ul li button.icon:hover {opacity: 0.9;}
+header ul li .list {position: absolute; right: 0; top: 100%; width: 100%; background: #3097D1; display: none; border-radius: 0 0 5px 5px; overflow: hidden;}
+header ul li .list.active {display: inherit;}
+header ul li .list button {width: 100%; color: #fff; padding: 5px;}
+header ul li .list button:hover {color: #3097D1; background: #f3f3f9;}
+
+/* main section */
+main {padding: 50px 0;}
+main .logo {text-align: center;}
+main .logo img:first-child {width: 80px; }
+main .logo img:last-child {width: 150px;}
+/* versions */
+.english_version {display: none;}
+.english_version.active {display: inherit;}
+.bangla_version.hide {display: none;}
+
+/* footer section */
+footer .container {padding: 25px 10px; border-top: 1px solid #ddd;}
+footer h5 {text-align: justify;}
+.copyright {text-align: center; padding: 25px 0; border-top: 1px solid #eee;}
+.copyright a {color: hotpink; font-weight: 600;}
+
+/* codes for responsive */
+@media screen and (max-width: 425px) {
+    #preloader img {width: 100%; left: 0;}
+    #alert_wrapper .alert_box {width: 90%; left: 5%;}
+    header ul {padding: 0 5px;}
+    header ul li a {padding: 10px 9px;}
+    header ul li button.icon {padding: 10px 9px;}
+}

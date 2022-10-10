@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Ink&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: raleway; background: #f3f3f9;}
+ul {list-style-type: none;}
+a {text-decoration: none;}
+ 
+/* preloader */
+#preloader {position: fixed; z-index: 1000; overflow: hidden; background: #7EC4CC; width: 100vw; height: 100vh; top: 0; left: 0; animation: preloader 0s 3s forwards;}
+@keyframes preloader {
+    100% {transform: scale(0);}
+}
+#preloader img {position: absolute; width: 30%; left: 35%; top: 50%; transform: translateY(-50%);}
+
+/* register info */
+.reg-box-wrapper {width: 40%; position: absolute; top: 50%; transform: translateY(-50%); left: 30%;}
+.reg-box-wrapper .reg-box {background: #fefefe; margin: 20px 0; border-radius: 3px; box-shadow: 0px 0px 5px #ddd}
+.reg-box-wrapper .reg-box .form-group {display: flex;}
+.reg-box-wrapper .reg-box .form-group .item {width: 30%; align-self: center; font-size: 14px;}
+.reg-box-wrapper .reg-box .form-group .item:last-child {width: 70%;}
+.reg-box-wrapper .reg-box .form-group .item:first-child {text-align: right;}
+.reg-box-wrapper .reg-box .form-group input {padding: 5px 10px; border: 1px solid #f3f3f9; width: 90%;}
+.reg-box-wrapper .reg-box .form-group input:focus {outline: none; border: 1px solid #ddd;}
+.reg-box-wrapper .reg-box a:hover {color: #333;}
+select {padding: 5px 10px; border: 1px solid #f3f3f9; width: 90%; outline: none; -webkit-appearance: none;}
+
+/* codes for responsive design */
+/* for desktop */
+@media screen and (max-width: 1024px) {
+    
+    .reg-box-wrapper {width: 60%; left: 20%;}
+
+}
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+    
+    #preloader img {width: 100%; left: 0;}
+    .reg-box-wrapper {width: 90%; left: 5%;}
+
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Reem Kufi Ink', sans-serif; overflow-x: hidden;}
+ul {list-style-type: none; padding: 0; margin: 0;}
+a {text-decoration: none;}
+p {font-size: 15px; font-weight: 100; text-align: justify;}
+hr {color: #999;}
+button {font-family: 'Courier New', Courier, monospace;}
+::selection {background: #a4d5ff; color: #333;}
+::-webkit-scrollbar {display: none;}
+section {padding: 50px 0;}
+button {border: none; background: none;}
+/* section title */
+.secTitle {text-align: center; margin-bottom: 70px; padding: 0 5px;}
+.secTitle h3 {color: #fff; position: relative;}
+.secTitle h3::after {content: ""; width: 50px; height: 3px; background: #FFB606; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);}
+ 
+/* preloader */
+#preloader {position: fixed; z-index: 1000; overflow: hidden; background: #7EC4CC; width: 100vw; height: 100vh; top: 0; left: 0; animation: preloader 0s 3s forwards;}
+@keyframes preloader {
+    100% {transform: scale(0);}
+}
+#preloader img {position: absolute; width: 30%; left: 35%; top: 50%; transform: translateY(-50%);}
+
+/* go to top */
+#topBtn {color: #FFB606; position: fixed; bottom: 30px; right: 30px; font-size: 35px; display: none; z-index: 99; opacity: 0.5; transition: all 0.5s;}
+#topBtn.show {display: block;}
+#topBtn:hover {opacity: 1; bottom: 35px;}
+
+            /* codes for topBar */
+#topBar {background: #002147; border-bottom: 2px solid #FFB606; overflow: hidden;}
+#topBar ul {display: flex; float: right;}
+#topBar ul li {padding: 20px 10px; transition: all .3s;}
+#topBar ul li a {padding: 5px 15px; background: #ffb606; color: #333; word-spacing: 5px; border-radius: 4px; font-size: 15px;}
+    #topBar ul li:hover {transform: scale(1.1) !important;}
+
+            /* codes for header section start from here */
+header {position: sticky; left: 0; top: 0; color: #fff; transition: all .3s; z-index: 10; background: #00000099; height: 70px;}
+header a.logo {float: left; padding: 10px; width: 300px;}
+/* left menu */
+header .left_menu {float: left; display: none;}
+header .left_menu .icon {padding: 10px; font-size: 18px; cursor: pointer;}
+header .left_menu .left_menu_wrapper.show {height: 245px; opacity: 1; transform: translateY(0);}
+header .left_menu .left_menu_wrapper {background: #fff; border-bottom: 1px solid #ffb606; width: 100%; position: absolute; left: 0; color: #333; overflow: scroll; height: 0; opacity: 0; transition: all 0.5s; transform: translateY(-20px);}
+header .left_menu .left_menu_wrapper ul {padding: 10px 0px;}
+header .left_menu .left_menu_wrapper ul li {padding: 5px 10px; cursor: pointer; word-spacing: 5px;}
+header .left_menu .left_menu_wrapper ul li ul.submenu {font-size: 14px; color: #3682d8; display: none;}
+header .left_menu .left_menu_wrapper ul li ul.submenu.show {display: inherit;}
+header .left_menu .left_menu_wrapper ul li ul.submenu ul.links {display: none;}
+header .left_menu .left_menu_wrapper ul li ul.submenu ul.links.show {display: inherit;}
+header .left_menu .left_menu_wrapper ul li ul.submenu a {color: #555; transition: all 0.3s; font-size: 13px;}
+/* main menu */
+header .menu ul {float: left;}
+header .menu ul li {display: inline-block; padding: 20px 15px; font-size: 14px; cursor: pointer;}
+header .menu ul li:hover {color: #ffb606;}
+header .menu ul li .dropdown.submenu {width: 300px; top: 100%;}
+header .menu ul li:hover .dropdown {height: auto; opacity: 1; transform: translateY(0);}
+header .menu ul li .dropdown {position: absolute; background: #fff; top: 240%; width: 100%; right: 0; cursor: auto; box-shadow: 0px 0px 5px #ddd; overflow: hidden; height: 0; transition: all 0.5s; opacity: 0; transform: translateY(-20px);}
+header .menu ul li .dropdown h6 {color: #5796CE; padding: 10px; word-spacing: 8px;}
+header .menu ul li .dropdown ul li {display: block; padding: 10px 15px;}
+header .menu ul li .dropdown ul li a {color: #333; transition: all 0.3s; font-size: 15px;}
+header .menu ul li .dropdown ul li a:hover {color: #FFB606; margin-left: 10px;}
+/* search box */
+header .header_search_wrapper {display: inline-block; padding: 10px; z-index: 11;}
+header .header_search_wrapper .icon {width: 40px; height: 40px; padding: 6px; text-align: center; border-radius: 50%; cursor: pointer; position: absolute; right: 10px; top: 10px;}
+header .header_search_wrapper form {background: linear-gradient(to right, #01234A, #063F82); padding: 20px 10px; position: absolute; color: #fff; justify-content: space-around; flex-wrap: wrap; top: 220%; right: 10px; border-radius: 5px; width: 300px; text-align: center; display: none;}
+header .header_search_wrapper form.show {display: flex;}
+header .header_search_wrapper form .input {width: 50%; padding: 5px;}
+header .header_search_wrapper form .input:last-child {width: 100%;}
+header .header_search_wrapper form .input:last-child input {width: 100%; padding: 5px 10px; border-radius: 5px; border: none;}
+header .header_search_wrapper form .input:last-child input:focus {outline: none;}
+
+/* sticky header */
+.sticky_header {background: #fff; color: #333; padding: 10px 0 80px; box-shadow: 0px 1px 2px #FFB606;}
+            /* codes for header section end here */
+/* banner */
+#banner {background: linear-gradient(#00000080, #00000080), url(../img/historical-outline-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
+#banner .breadcrumb {color: yellow; display: block;}
+#banner .breadcrumb ul {display: flex; justify-content: center;}
+#banner .breadcrumb ul li {padding: 10px;}
+#banner .breadcrumb ul li:nth-child(2) {color: #fff; font-size: 10px; align-self: center;}
+#banner .breadcrumb ul li a {color: #fff;}
+#banner .breadcrumb ul li a:hover {color: yellow;}
+
+            /* codes for main section start from here */
+#main .search_box {background: linear-gradient(to right, navy, #ffb606); padding: 20px; border-radius: 20px;}
+#main .search_box .box {display: flex; width: 100%; background: #fff; padding: 10px 20px; border-radius: 20px;}
+#main .search_box .box i {width: 40px; text-align: center; color: #ffb606;}
+#main .search_box .box input {width: 100%; border: none; outline: none; background: none;}
+/* programs */
+#main .programs_wrapper {padding: 20px;}
+#main .programs_wrapper .programs_title {margin: 20px 0; text-align: center; font-size: 20px;}
+#main .programs_wrapper .programs_title span {background: #ffb606; font-size: 14px; padding: 0 10px; border-radius: 15px;}
+#main .programs_wrapper .program_box {padding: 40px 20px; box-shadow: 0 0 10px #ddd; margin: 20px 0;}
+#main .programs_wrapper .program_box h5 {color: navy;}
+#main .programs_wrapper .program_box .tags {display: flex; flex-wrap: wrap; margin: 10px 0;}
+#main .programs_wrapper .program_box .tags a {color: #333; border: 1px solid #ddd; padding: 5px 10px; margin: 5px; font-size: 14px;}
+#main .programs_wrapper .program_box .tags a:hover {color: #ffb606;}
+#main .programs_wrapper .program_box .rmBtn {position: relative; display: inline; padding: 5px 0px;}
+#main .programs_wrapper .program_box .rmBtn a {border: 1px solid #ffb606; padding: 5px 20px; border-radius: 20px; color: #333;}
+#main .programs_wrapper .program_box .rmBtn span {height: 0%; width: 0%; background: #ffb606; position: absolute; top: 0; left: 0; z-index: -1; border-radius: 20px; transition: all 0.3s;}
+#main .programs_wrapper .program_box .rmBtn:hover span {height: 100%; width: 100%;}
+#main .pagination_wrapper ul {display: flex; justify-content: center;}
+#main .pagination_wrapper ul li {padding: 10px; align-self: center;}
+#main .pagination_wrapper ul li a {color: navy; background: #eee; padding: 10px 15px; border-radius: 5px;}
+#main .pagination_wrapper ul li a.active  {background: #ffb606;}
+/* checkbox */
+#main .checkbox_wrapper {padding: 20px;}
+#main .checkbox_wrapper .checkbox_box {box-shadow: 0 0 10px #ddd; margin: 20px 0;}
+#main .checkbox_wrapper .checkbox_box h5 {color: #fff; background: navy; padding: 20px; cursor: pointer;}
+#main .checkbox_wrapper .checkbox_box h5 span.rotate {rotate: 135deg; transition: all 0.3s;}
+#main .checkbox_wrapper .checkbox_box .item_wrapper.hide {display: none;}
+#main .checkbox_wrapper .checkbox_box .item_wrapper .item {padding: 10px 20px; display: flex;}
+#main .checkbox_wrapper .checkbox_box .item_wrapper .item input {margin-right: 10px;}
+            /* codes for main section end here */
+
+            /* codes for footer section start from here */
+footer {background: #002147; background-image: url(../img/footerbglogo.png) ; background-size: 250px; background-position: center center; background-repeat: no-repeat; color: #f9f9f9; padding: 50px 0; border-top: 2px solid #ffb606; font-size: 15px;}
+footer a {color: #f9f9f9; line-height: 40px; word-spacing: 5px;}
+footer a:hover {color: #ffb606;}
+footer a span.animate {color: yellow; animation: footerSpan 0.5s infinite;}
+    @keyframes footerSpan {
+        0% {opacity: 0;}    100% {opacity: 1;}
+    }
+/* copyright */
+.copyright {background: #0F2E52; color: #f9f9f9; word-spacing: 4px; padding: 20px 0;}
+.copyright ul {float: right;}
+.copyright ul li {display: inline-block; padding: 0 8px;}
+.copyright ul li a {color: #fff;}
+.copyright ul li a:hover {color: #ffb606;}
+            /* codes for footer section end here */
+
+            /* codes for responsive */
+/* for desctop */
+@media screen and (max-width: 1024px) {
+
+header a.logo {width: 200px;}
+header .menu ul li {padding: 20px 5px;}
+header .menu ul li:last-child:hover .dropdown.submenu {height: 90vh; overflow: scroll;}
+header .header_search_wrapper {padding: 10px 5px;}
+
+}
+
+/* for tablet */
+@media screen and (max-width: 768px) {
+ 
+#topBar ul {float: none;}
+#topBar ul li {margin: auto;} 
+.sticky_header {height: 70px; padding-bottom: 10px;}
+header {height: 55px;}
+header .container {min-width: 100%;}
+header .left_menu {display: inherit;}
+header .menu {display: none;}
+header a.logo {position: absolute; left: 50%; transform: translateX(-50%);}
+header .header_search_wrapper .icon {width: 32px; height: 32px; padding: 4px;}
+header .header_search_wrapper form  {top: 200%;}
+    
+}
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+ 
+#preloader img {width: 100%; left: 0;}
+#topBar {display: none;}
+.copyright {text-align: center;}
+.copyright ul {float: none; padding-bottom: 10px;}
+#main .programs_wrapper {padding: 20px 0;}
+#main .pagination_wrapper ul li {padding: 8px;}
+#main .pagination_wrapper ul li a {padding: 5px 10px;}
+#main .checkbox_wrapper {padding: 20px 0;}
+    
+}

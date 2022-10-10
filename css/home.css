@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Reem Kufi Ink', sans-serif; overflow-x: hidden;}
+ul {list-style-type: none; padding: 0; margin: 0;}
+a {text-decoration: none;}
+p {font-size: 15px; font-weight: 100; text-align: justify;}
+hr {color: #999;}
+button {font-family: 'Courier New', Courier, monospace;}
+::selection {background: #a4d5ff; color: #333;}
+::-webkit-scrollbar {display: none;}
+section {padding: 50px 0;}
+button {border: none; background: none;}
+/* section title */
+.secTitle {text-align: center; margin-bottom: 70px; padding: 0 5px;}
+.secTitle h3 {color: navy; position: relative;}
+.secTitle h3::after {content: ""; width: 50px; height: 3px; background: #FFB606; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);}
+ 
+/* preloader */
+#preloader {position: fixed; z-index: 1000; overflow: hidden; background: #7EC4CC; width: 100vw; height: 100vh; top: 0; left: 0; animation: preloader 0s 3s forwards;}
+@keyframes preloader {
+    100% {transform: scale(0);}
+}
+#preloader img {position: absolute; width: 30%; left: 35%; top: 50%; transform: translateY(-50%);}
+
+/* go to top */
+#topBtn {color: #FFB606; position: fixed; bottom: 30px; right: 30px; font-size: 35px; display: none; z-index: 99; opacity: 0.5; transition: all 0.5s;}
+#topBtn.show {display: block;}
+#topBtn:hover {opacity: 1; bottom: 35px;}
+
+            /* codes for topBar */
+#topBar {background: #002147; border-bottom: 2px solid #FFB606; overflow: hidden;}
+#topBar ul {display: flex; float: right;}
+#topBar ul li {padding: 20px 10px; transition: all .3s;}
+#topBar ul li a {padding: 5px 15px; background: #ffb606; color: #333; word-spacing: 5px; border-radius: 4px; font-size: 15px;}
+    #topBar ul li:hover {transform: scale(1.1) !important;}
+
+            /* codes for header section start from here */
+header {position: sticky; left: 0; top: 0; color: #fff; transition: all .3s; z-index: 10; background: #00000099; height: 70px;}
+header a.logo {float: left; padding: 10px; width: 300px;}
+/* left menu */
+header .left_menu {float: left; display: none;}
+header .left_menu .icon {padding: 10px; font-size: 18px; cursor: pointer;}
+header .left_menu .left_menu_wrapper.show {height: 245px; opacity: 1; transform: translateY(0);}
+header .left_menu .left_menu_wrapper {background: #fff; border-bottom: 1px solid #ffb606; width: 100%; position: absolute; left: 0; color: #333; overflow: scroll; height: 0; opacity: 0; transition: all 0.5s; transform: translateY(-20px);}
+header .left_menu .left_menu_wrapper ul {padding: 10px 0px;}
+header .left_menu .left_menu_wrapper ul li {padding: 5px 10px; cursor: pointer; word-spacing: 5px;}
+header .left_menu .left_menu_wrapper ul li ul.submenu {font-size: 14px; color: #3682d8; display: none;}
+header .left_menu .left_menu_wrapper ul li ul.submenu.show {display: inherit;}
+header .left_menu .left_menu_wrapper ul li ul.submenu ul.links {display: none;}
+header .left_menu .left_menu_wrapper ul li ul.submenu ul.links.show {display: inherit;}
+header .left_menu .left_menu_wrapper ul li ul.submenu a {color: #555; transition: all 0.3s; font-size: 13px;}
+/* main menu */
+header .menu ul {float: left;}
+header .menu ul li {display: inline-block; padding: 20px 15px; font-size: 14px; cursor: pointer;}
+header .menu ul li:hover {color: #ffb606;}
+header .menu ul li .dropdown.submenu {width: 300px; top: 100%;}
+header .menu ul li:hover .dropdown {height: auto; opacity: 1; transform: translateY(0);}
+header .menu ul li .dropdown {position: absolute; background: #fff; top: 240%; width: 100%; right: 0; cursor: auto; box-shadow: 0px 0px 5px #ddd; overflow: hidden; height: 0; transition: all 0.5s; opacity: 0; transform: translateY(-20px);}
+header .menu ul li .dropdown h6 {color: #5796CE; padding: 10px; word-spacing: 8px;}
+header .menu ul li .dropdown ul li {display: block; padding: 10px 15px;}
+header .menu ul li .dropdown ul li a {color: #333; transition: all 0.3s; font-size: 15px;}
+header .menu ul li .dropdown ul li a:hover {color: #FFB606; margin-left: 10px;}
+/* search box */
+header .header_search_wrapper {display: inline-block; padding: 10px; z-index: 11;}
+header .header_search_wrapper .icon {width: 40px; height: 40px; padding: 6px; text-align: center; border-radius: 50%; cursor: pointer; position: absolute; right: 10px; top: 10px;}
+header .header_search_wrapper form {background: linear-gradient(to right, #01234A, #063F82); padding: 20px 10px; position: absolute; color: #fff; justify-content: space-around; flex-wrap: wrap; top: 220%; right: 10px; border-radius: 5px; width: 300px; text-align: center; display: none;}
+header .header_search_wrapper form.show {display: flex;}
+header .header_search_wrapper form .input {width: 50%; padding: 5px;}
+header .header_search_wrapper form .input:last-child {width: 100%;}
+header .header_search_wrapper form .input:last-child input {width: 100%; padding: 5px 10px; border-radius: 5px; border: none;}
+header .header_search_wrapper form .input:last-child input:focus {outline: none;}
+
+/* sticky header */
+.sticky_header {background: #fff; color: #333; padding: 10px 0 80px; box-shadow: 0px 1px 2px #FFB606;}
+            /* codes for header section end here */
+
+            /* codes for slider section start from here */
+#topSlider .carousel .carousel-control-prev, .carousel-control-next {width: 5%;}
+#topSlider .carousel .overlay {width: 100%; height: 100%; background: #00000083; position: absolute; top: 0; color: #fff;}
+#topSlider .carousel .overlay .texts {margin-top: 20%;}
+#topSlider .carousel .overlay .texts i {color: #fac13b;}
+#topSlider .carousel .overlay .texts a {background: #fac13b; color: #333; border-radius: 3px; padding: 5px 10px;}
+            /* codes for slider section end here */
+
+            /* codes for leadership section start from here */
+#leadership .item {box-shadow: 0px 0px 20px #ddd; height: 100%; padding: 20px; overflow: hidden;}
+#leadership .item.message {padding: 50px 20px;}
+#leadership .item.message a {color: #fff; background: navy; padding: 5px 15px; border-radius: 3px;}
+#leadership .item:not(.message) p {color: navy; text-align: center;}
+#leadership .item:hover {box-shadow: none;}
+#leadership .item img {width: 80%; border: 1px solid #ddd;}
+            /* codes for leadership section end here */
+
+            /* codes for numbers section start from here */
+#numbers .banner {background: linear-gradient(#000000b9, #000000b9), url(../img/student-library.jpg) fixed; background-repeat: no-repeat; background-size: cover; background-position: center; padding: 50px 0; text-align: center; color: #fff;}
+#numbers .banner .icon {color: #FFB606; width: 100px; height: 100px; background: #ffffff4f; margin: 20px auto; font-size: 40px; border-radius: 50%; padding: 15px; border: 2px solid #fff;}
+            /* codes for numbers section end here */
+
+            /* codes for welcome section start from here */
+#welcome a {background: #fac13b; display: block; padding: 10px; text-align: center; font-size: 18px; color: #222; border-radius: 6px; margin-top: 30px; transition: all 0.3s;}
+#welcome a:hover { box-shadow: 10px 10px 10px #ddd; margin-top: 25px;}
+#welcome .yt-video {background: url(../img/du_library.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%; position: relative; display: grid; place-items: center;}
+#welcome .yt-video button.yt-icon {width: 70px; height: 70px; background: #fff; font-size: 30px; padding: 10px; text-align: center; border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); color: #FFB606;}
+#welcome .video-wrapper {position: fixed; background: #00000099; top: 0; left: 0; width: 100%; height: 100%; z-index: 11; display: none;}
+#welcome .video-wrapper .video {width: 50%; height: 40%; position: absolute; top: 30%; left: 25%;}
+#welcome .video-wrapper .video iframe {width: 100%; height: 100%;}
+#welcome .video-wrapper .video button.close {color: #fff; font-size: 20px; position: absolute; top: -30px; right: 0;}
+            /* codes for welcome section end here */
+
+            /* codes for news section start from here */
+#news #newsSlider {min-height: 450px; overflow: hidden;}
+#news #newsSlider .slide_item {width: 400px; height: 450px; background: #fff; border: 1px solid #eee; border-radius: 6px; position: absolute; transition: all 1s;}
+#news #newsSlider .slide_item .date {background: #efefef; padding: 10px;}
+#news #newsSlider .slide_item .date i {color: #ffb606;}
+#news #newsSlider .slide_item .text {padding: 10px;}
+#news #newsSlider .slide_item .text a {color: navy; transition: all 0.3s;}
+#news #newsSlider .slide_item .text a:not(.rmBtn):hover {color: #ffb606;}
+#news #newsSlider .slide_item .text .btnWrapper {position: absolute; bottom: 20px;}
+#news #newsSlider .slide_item .text .btnWrapper a.rmBtn {border: 1px solid #ffb606; padding: 5px 30px; border-radius: 20px; position: relative;}
+#news #newsSlider .slide_item .text .btnWrapper a.rmBtn::before {content: ""; width: 0%; height: 100%; background: #ffb606; position: absolute; top: 0; left: 0; z-index: -1; border-radius: 20px; transition: all 0.5s;}
+#news #newsSlider .slide_item .text .btnWrapper a.rmBtn:hover:before {width: 100%;}
+            /* codes for news section end here */
+
+            /* codes for dual box section start from here */
+#dual_box {background: #eee;}
+#dual_box .card {min-height: 500px; border: none; box-shadow: 0px 0px 10px #999;}
+#dual_box .card:hover {box-shadow: none;}
+#dual_box .card ul {padding: 10px; display: flex; justify-content: space-between;}
+#dual_box .card ul li {padding: 10px; align-self: center;}
+#dual_box .card ul li:first-child {white-space: nowrap; text-align: center;}
+#dual_box .card ul a {color: navy;}
+#dual_box .card ul a:hover {color: #ffb606; transition: all 0.3s;}
+#dual_box .card .btn-wrapper {position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);}
+#dual_box .card .btn-wrapper .rmBtn {color: navy; border: 1px solid navy; padding: 5px 15px; border-radius: 20px; transition: all 0.3s;}
+#dual_box .card .btn-wrapper .rmBtn:hover {background: navy; color: #fff;}
+#dual_box .notice_wrapper {background: #fff; height: 500px; margin-top: 85px; border-radius: 5px; box-shadow: 0px 0px 5px #999; padding: 20px 0;}
+#dual_box .notice_wrapper .notice_board {overflow-y: scroll; height: 100%;}
+#dual_box .notice_wrapper .notice {padding: 20px; text-align: justify;}
+#dual_box .notice_wrapper .notice a {color: navy; transition: all 0.3s;}
+#dual_box .notice_wrapper .notice a:not(.rmBtn):hover {color: #ffb606;}
+#dual_box .notice_wrapper .notice span {line-height: 50px; font-size: 15px;}
+#dual_box .notice_wrapper .notice a.rmBtn {border: 1px solid navy; padding: 5px 10px; border-radius: 20px; font-size: 14px; transition: all 0.3s;}
+#dual_box .notice_wrapper .notice a.rmBtn:hover {background: navy; color: #fff;}
+            /* codes for dual box section end here */
+
+            /* codes for activities section start from here */
+#activities {background: #f6f6f6;}
+#activities .activities_slider {width: 100%; margin: auto; display: flex; overflow-x: scroll; position: relative;}
+#activities .activities_slider .item {min-width: 30%; height: 500px; border: 1px solid #ddd;  margin: 10px; cursor: e-resize; position: relative;}
+#activities .activities_slider .item .image {width: 100%; overflow: hidden; height: 200px; border-bottom: 1px solid #eee;}
+#activities .activities_slider .item:hover .image img {transform: scale(1.1); transition: all 0.3s;}
+#activities .activities_slider .item .text {padding: 20px;}
+#activities .activities_slider .item .text .date {float: right; color: #999; font-size: 13px;}
+#activities .activities_slider .item .text a {color: navy; transition: all 0.3s;}
+#activities .activities_slider .item .text a:not(.Btn):hover {color: #ffb606;}
+#activities .activities_slider .item .text .rmBtn {position: absolute; width: 100%; left: 0; padding: 20px; bottom: 0;}
+#activities .activities_slider .item .text .rmBtn a {border: 1px solid navy; padding: 2px 10px; border-radius: 20px;}
+#activities .activities_slider .item .text .rmBtn a:hover {color: #fff; background: navy;}
+            /* codes for activities section end here */
+
+            /* codes for achievements section start from here */
+#achievements .card h5, a {color: navy;}
+#achievements .box {box-shadow: 0px 0px 10px #999; margin: 0 20px 0 0; min-height: 450px;}
+#achievements .box2 {margin: 0 0 0 20px;}
+#achievements .box {text-align: justify; position: relative;}
+#achievements .box a:not(.Btn):hover {color: #ffb606; transition: all 0.3s;}
+#achievements .box .rmBtn {position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px;}
+#achievements .box .rmBtn a.Btn {background: #fac13b; display: block; padding: 10px; text-align: center; font-size: 18px; color: #222; border-radius: 6px; transition: all 0.3s;}
+#achievements .box .rmBtn a.Btn:hover {box-shadow: 10px 10px 10px #ddd;}
+/* student achievements */
+#achievements .item {border: 1px solid #ddd; border-radius: 5px; height: 100%;}
+#achievements .item h5 {color: navy; text-align: center; padding: 15px 0 10px;}
+#achievements .item ul {display: flex;}
+#achievements .item ul li {padding: 10px; align-self: center;}
+#achievements .item ul li a:hover {color: #ffb606;}
+#achievements .item ul li img {width: 70px; border-radius: 50%;}
+#achievements .item ul li i {color: #ffb606; margin-right: 10px;}
+#achievements .item ul li span {display: block;}
+            /* codes for achievements section end here */
+
+            /* codes for videos section start from here */
+#videos {background: #f9f9f9;}
+#videos .item iframe {height: 230px;}
+#videos .item {border: 1px solid #eee; height: 100%;}
+#videos .item .title {font-size: 110%; text-align: justify; padding: 10px; color: navy;}
+            /* codes for videos section end here */
+
+            /* codes for footer section start from here */
+footer {background: #002147; background-image: url(../img/footerbglogo.png) ; background-size: 250px; background-position: center center; background-repeat: no-repeat; color: #f9f9f9; padding: 50px 0; border-top: 2px solid #ffb606; font-size: 15px;}
+footer a {color: #f9f9f9; line-height: 40px; word-spacing: 5px;}
+footer a:hover {color: #ffb606;}
+footer a span.animate {color: yellow; animation: footerSpan 0.5s infinite;}
+    @keyframes footerSpan {
+        0% {opacity: 0;}    100% {opacity: 1;}
+    }
+/* copyright */
+.copyright {background: #0F2E52; color: #f9f9f9; word-spacing: 4px; padding: 20px 0;}
+.copyright ul {float: right;}
+.copyright ul li {display: inline-block; padding: 0 8px;}
+.copyright ul li a {color: #fff;}
+.copyright ul li a:hover {color: #ffb606;}
+            /* codes for footer section end here */
+
+            /* codes for responsive */
+/* for desctop */
+@media screen and (max-width: 1024px) {
+
+header a.logo {width: 200px;}
+header .menu ul li {padding: 20px 5px;}
+header .menu ul li:last-child:hover .dropdown.submenu {height: 90vh; overflow: scroll;}
+header .header_search_wrapper {padding: 10px 5px;}
+#activities .activities_slider .item {min-width: 33%;}
+#videos .item iframe {height: 160px;}
+
+}
+
+/* for tablet */
+@media screen and (max-width: 768px) {
+ 
+#topBar ul {float: none;}
+#topBar ul li {margin: auto;} 
+.sticky_header {height: 70px; padding-bottom: 10px;}
+header {height: 55px;}
+header .container {min-width: 100%;}
+header .left_menu {display: inherit;}
+header .menu {display: none;}
+header a.logo {position: absolute; left: 50%; transform: translateX(-50%);}
+header .header_search_wrapper .icon {width: 32px; height: 32px; padding: 4px;}
+header .header_search_wrapper form  {top: 200%;}
+#topSlider .carousel .overlay .texts {margin-top: 10%;}
+#leadership .item.message {padding: 20px;}
+#welcome .yt-video {height: 400px;}
+#welcome .video-wrapper .video {width: 60%; left: 20%;}
+#activities .activities_slider .item {min-width: 45%;}
+    
+}
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+ 
+#preloader img {width: 100%; left: 0;}
+#topBar {display: none;}
+#topSlider .carousel .overlay .texts {margin-top: 0%;}
+#topSlider .carousel .overlay .texts h4 {font-size: 18px;}
+#topSlider .carousel .overlay .texts .col-md-6:first-child {display: none;}
+#welcome .yt-video {height: 250px;}
+#welcome .video-wrapper .video {width: 90%; left: 5%; height: 30%; top: 35%;}
+#news #newsSlider .slide_item {width: 300px;}
+#dual_box .card {min-height: 450px;}
+#activities .activities_slider .item {min-width: 85%;}
+#achievements .card h5 {font-size: 13px;}
+#achievements .box {margin: 10px 0;}
+#videos .item iframe {height: 180px;}
+.copyright {text-align: center;}
+.copyright ul {float: none; padding-bottom: 10px;}
+    
+}

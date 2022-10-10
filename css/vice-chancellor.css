@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Reem Kufi Ink', sans-serif; overflow-x: hidden;}
+ul {list-style-type: none; padding: 0; margin: 0;}
+a {text-decoration: none;}
+p {font-size: 15px; font-weight: 100; text-align: justify; font-family: cursive; line-height: 30px;}
+hr {color: #999;}
+button {font-family: 'Courier New', Courier, monospace;}
+::selection {background: #a4d5ff; color: #333;}
+::-webkit-scrollbar {display: none;}
+section {padding: 50px 0;}
+button {border: none; background: none;}
+/* section title */
+.secTitle {text-align: center; margin-bottom: 70px; padding: 0 5px;}
+.secTitle h3 {color: navy; position: relative;}
+.secTitle h3::after {content: ""; width: 50px; height: 3px; background: #FFB606; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);}
+ 
+/* preloader */
+#preloader {position: fixed; z-index: 1000; overflow: hidden; background: #7EC4CC; width: 100vw; height: 100vh; top: 0; left: 0; animation: preloader 0s 3s forwards;}
+@keyframes preloader {
+    100% {transform: scale(0);}
+}
+#preloader img {position: absolute; width: 30%; left: 35%; top: 50%; transform: translateY(-50%);}
+
+/* go to top */
+#topBtn {color: #FFB606; position: fixed; bottom: 30px; right: 30px; font-size: 35px; display: none; z-index: 99; opacity: 0.5; transition: all 0.5s;}
+#topBtn.show {display: block;}
+#topBtn:hover {opacity: 1; bottom: 35px;}
+
+            /* codes for topBar */
+#topBar {background: #002147; background-image: url(../img/footerbglogo.png); background-repeat: no-repeat; background-size: 200px; background-position: center; color: #fff; border-bottom: 2px solid #FFB606; overflow: hidden; padding: 10px 0;}
+#topBar ul {display: flex;}
+#topBar ul li {padding: 10px; align-self: center;}
+
+header {position: sticky; top: 0; left: 0; z-index: 10; background: #222; color: #fff;}
+header .icon {display: none; padding: 10px; float: left; cursor: pointer;}
+header ul {display: flex; justify-content: center; padding: 10px;}
+header ul li {padding: 10px;}
+header ul li a {color: #f9f9f9; font-size: 15px; transition: all 0.3s;}
+header ul li a:hover {color: #ffb606;}
+header a.logo {display: none; padding: 10px;}
+/* banner */
+#banner {color: #fff; height: 80vh; background: linear-gradient(#00000080, #00000080), url(../img/vc-banner.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; position: relative;}
+#banner h1.title {position: absolute; top: 50%; transform: translateY(-50%); text-align: center; width: 100%; left: 0; font-weight: bold; word-spacing: 10px; padding: 10px; font-size: 60px;}
+
+/* sticky header */
+.sticky_header {background: #fff; color: #222; box-shadow: 0px 1px 2px #FFB606;}
+.sticky_header ul li a {color: #222;}
+            /* codes for header section end here */
+
+            /* codes for message section start from here */
+#message {background: #002147; color: #fff; border-top: 2px solid #ffb606;}
+#message .msg_box img {width: 200px; float: left; margin-right: 20px; box-shadow: 0px 0px 5px #fff; border-radius: 5px;}
+            /* codes for message section end here */
+
+            /* codes for profile section start from here */
+#profile .profile_box {box-shadow: 0 0 10px #ddd; padding: 40px; border-top: 3px solid navy;}
+#profile .profile_box h5 {color: navy; font-weight: bold;}
+#profile .profile_box ul {list-style-type: circle; margin-left: 40px; line-height: 30px; margin-bottom: 20px;}
+#profile .profile_box a {display: inline-flex; color: navy; font-weight: bold; border: 1px solid navy; padding: 0 10px; border-radius: 20px; transition: all 0.3s;}
+#profile .profile_box a span {padding: 0 5px; align-self: center;}
+#profile .profile_box a:hover {color: #fff; background: navy;}
+            /* codes for profile section end here */
+
+            /* codes for speech section start from here */
+#speech {background: #f9f9f9; background-image: url(../img/shape-bg.png); background-repeat: no-repeat; background-size: cover; background-position: center;}
+#speech .box_wrapper {padding: 5px; text-align: center; box-shadow: 0 0 10px #ddd;}
+#speech .box_wrapper .box {padding: 80px; position: relative; overflow: hidden;}
+#speech .box_wrapper .box img {width: 80px; border-radius: 50%; box-shadow: 0 0 10px #ddd;}
+#speech .box_wrapper .box p {text-align: center;}
+#speech .box_wrapper .box h5 {color: navy;}
+#speech .box_wrapper .box .icon {width: 100px; height: 100px; background: #ffb606; position: absolute; top: -50px; right: -50px; transform: rotate(45deg);}
+#speech .box_wrapper .box .icon i {position: absolute; top: 55px; left: 35px; transform: rotate(-45deg); font-size: 30px;}
+            /* codes for speech section end here */
+
+            /* codes for gallery section start from here */
+#gallery ul.link {display: flex; justify-content: center; margin-bottom: 20px;}
+#gallery ul.link li {padding: 5px 20px; color: navy; border: 1px solid transparent; cursor: pointer;}
+#gallery ul.link li.active {border-color: navy;}
+#gallery .images_wrapper .images {display: none;}
+#gallery .images_wrapper .images.active {display: flex;}
+#gallery .images_wrapper .images img {border: 2px solid #ffb606; border-radius: 10px;}
+            /* codes for gallery section end here */
+
+            /* codes for contact section start from here */
+#contact .contact_info {background: #fafafa; text-align: center; padding: 20px 10px; overflow: hidden; border-bottom: 2px solid #ddd;}
+#contact .contact_info h5 {color: navy;}
+#contact .contact_info .icon {width: 100px; height: 100px; margin: auto; font-size: 40px; padding: 15px; border-radius: 50%; box-shadow: 0 0 10px #ddd; margin-bottom: 20px; color: #ffb606;}
+#contact .map_ps {margin-top: 20px;}
+#contact .map_ps h5 {color: navy; word-spacing: 5px; margin: 20px 0;}
+#contact .map_ps .mapouter {box-shadow: 0 0 10px #aaa;}
+            /* codes for contact section end here */
+
+            /* codes for footer section start from here */
+footer {background: #002147; background-image: url(../img/footerbglogo.png) ; background-size: 250px; background-position: center center; background-repeat: no-repeat; color: #f9f9f9; padding: 50px 0; border-top: 2px solid #ffb606; font-size: 15px;}
+footer h5 {color: #ffb606;}
+footer h5 i {color: #fff;}
+/* copyright */
+.copyright {background: #0F2E52; color: #f9f9f9; word-spacing: 4px; padding: 20px 0;}
+.copyright ul {float: right;}
+.copyright ul li {display: inline-block; padding: 0 8px;}
+.copyright ul li a {color: #fff;}
+.copyright ul li a:hover {color: #ffb606;}
+            /* codes for footer section end here */
+
+            /* codes for responsive */
+
+/* for tablet */
+@media screen and (max-width: 768px) {
+ 
+#speech .box_wrapper .box {padding: 80px 20px;}
+    
+}
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+ 
+#preloader img {width: 100%; left: 0;}
+#topBar {display: none;}
+header .icon {display: inherit;}
+header ul {display: block; background: #222; text-align: center; border-bottom: 1px solid #ffb606; display: none;}
+header ul.show {display: inherit;}
+header a.logo {display: inherit; margin-left: 20%;}
+.sticky_header ul {background: #fff;}
+#banner h1.title {font-size: 40px;}
+#message .msg_box img {width: 100%; margin: 0 0 20px; float: none; border-radius: 50%;}
+#profile .profile_box {padding: 20px;}
+#profile .profile_box ul {margin-left: 20px;}
+.copyright {text-align: center;}
+.copyright ul {float: none; padding-bottom: 10px;}
+    
+}
